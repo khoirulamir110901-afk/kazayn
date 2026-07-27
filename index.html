@@ -2,300 +2,242 @@
 <html lang="id" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Kazayn Store Percetakan - Jasa Cetak Custom, Grosir & Satuan</title>
-    <meta name="description" content="Solusi lengkap kebutuhan spanduk, banner, stiker, cetak kertas, hingga merchandise custom untuk promosi bisnis Anda. Bisa COD & Pengerjaan Cepat.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kazayn Store Percetakan - Jasa Cetak Spanduk, Banner, Stiker & Merchandise Custom</title>
+    <meta name="description" content="Solusi lengkap cetak spanduk, banner, stiker, undangan, dan merchandise custom cepat, rapi, dan bisa COD. Melayani pemesanan online ke seluruh Indonesia.">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Google Fonts (Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <!-- Preload Hero Image (Google Drive) -->
-    <link rel="preload" id="hero-bg-preload" as="image" href="https://lh3.googleusercontent.com/d/1JJLu9CzwQpmHGb16JtbTy6ZODjf5U_b0">
-
     <script>
         tailwind.config = {
             theme: {
-                screens: {
-                    'xs': '380px',
-                    'sm': '640px',
-                    'md': '768px',
-                    'lg': '1024px',
-                    'xl': '1280px',
-                    '2xl': '1536px',
-                },
                 extend: {
                     colors: {
                         navy: {
-                            DEFAULT: '#1F4E78',
-                            dark: '#163857',
-                            light: '#2B6396',
-                            soft: '#EEF4F8'
+                            DEFAULT: '#163857',
+                            dark: '#0f273e',
+                            light: '#1f4e78'
                         },
-                        cyanAccent: '#06B6D4',
-                        waGreen: '#25D366',
-                        waGreenHover: '#1EBE5A',
+                        waGreen: {
+                            DEFAULT: '#25D366',
+                            hover: '#1da851'
+                        }
                     },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                    screens: {
+                        'xs': '380px'
                     }
                 }
             }
         }
     </script>
     
+    <!-- Google Fonts Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        .gradient-hero {
-            background: #163857;
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #1e293b;
         }
-        .bg-pattern {
-            background-image: radial-gradient(rgba(255, 255, 255, 0.12) 1px, transparent 1px);
-            background-size: 20px 20px;
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
         }
-        .glow-effect {
-            box-shadow: 0 0 25px rgba(37, 211, 102, 0.3);
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
         }
-        .pulse-animation {
-            animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
         }
-        @keyframes pulse-ring {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.08); opacity: 0.85; }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
         }
-        /* Hide scrollbar for Chrome, Safari and Opera */
         .no-scrollbar::-webkit-scrollbar {
             display: none;
         }
-        /* Hide scrollbar for IE, Edge and Firefox */
         .no-scrollbar {
-            -ms-overflow-style: none;  /* IE and Edge */
-            scrollbar-width: none;  /* Firefox */
+            -ms-overflow-style: none;
+            scrollbar-width: none;
         }
     </style>
 </head>
-<body class="font-sans text-gray-800 bg-slate-50 antialiased selection:bg-cyanAccent selection:text-white overflow-x-hidden">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-500 selection:text-white">
 
-    <!-- TOP BAR -->
-    <div class="bg-navy-dark text-white text-xs py-2 px-3 sm:px-4">
-        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
-            <div class="flex items-center space-x-3 sm:space-x-4 text-[11px] sm:text-xs">
-                <span class="flex items-center"><i class="fa-solid fa-clock mr-1.5 text-cyanAccent"></i> Sen - Sat: 08:00 - 20:00 WIB</span>
-                <span class="hidden md:flex items-center"><i class="fa-solid fa-location-dot mr-1.5 text-cyanAccent"></i> Sekejati, Buahbatu, Bandung</span>
-            </div>
-            <div class="flex items-center space-x-3 text-[11px] sm:text-xs ml-auto sm:ml-0">
-                <span class="bg-emerald-500/20 text-emerald-300 px-2 py-0.5 rounded-full text-[10px] font-semibold tracking-wide uppercase flex items-center">
-                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 mr-1 animate-ping"></span> Melayani COD Spanduk
-                </span>
-                <a href="https://wa.me/6285179756031" target="_blank" class="hover:text-cyanAccent transition flex items-center font-medium">
-                    <i class="fa-brands fa-whatsapp text-emerald-400 mr-1 text-sm"></i> 0851-7975-6031
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <!-- MAIN NAVBAR -->
-    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+    <!-- HEADER & NAVBAR -->
+    <header class="sticky top-0 z-40 bg-navy/95 backdrop-blur-md text-white shadow-lg border-b border-navy-light/30">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16 sm:h-20">
-                <!-- Brand Logo -->
-                <a href="#" class="flex items-center space-x-2.5 sm:space-x-3 group">
-                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-navy rounded-xl flex items-center justify-center text-white text-lg sm:text-xl font-black shadow-md shadow-navy/20 group-hover:scale-105 transition transform shrink-0">
-                        <i class="fa-solid fa-print text-cyanAccent"></i>
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <!-- Logo Brand -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-tr from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center text-white font-black text-xl shadow-md group-hover:scale-105 transition duration-300">
+                        <i class="fa-solid fa-print text-lg sm:text-xl"></i>
                     </div>
-                    <div>
-                        <span class="text-lg sm:text-2xl font-black text-navy tracking-tight block leading-none">KAZAYN STORE</span>
-                        <span class="text-[10px] sm:text-xs font-semibold tracking-wider text-cyan-600 uppercase block mt-0.5 sm:mt-1">Percetakan & Digital Printing</span>
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-base sm:text-xl tracking-tight text-white leading-tight">Kazayn Store</span>
+                        <span class="text-[10px] sm:text-xs text-cyan-400 font-medium tracking-wider uppercase">Percetakan Custom</span>
                     </div>
                 </a>
 
-                <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex items-center space-x-6 lg:space-x-8 font-medium text-sm lg:text-base text-gray-700">
-                    <a href="#beranda" class="hover:text-navy transition py-2 border-b-2 border-transparent hover:border-navy">Beranda</a>
-                    <a href="#jasa-desain" class="hover:text-navy transition py-2 border-b-2 border-transparent hover:border-navy">Jasa Desain</a>
-                    <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" class="hover:text-navy transition py-2 border-b-2 border-transparent hover:border-navy flex items-center gap-1.5">
-                        <span>Katalog Facebook</span>
-                        <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-blue-500"></i>
+                <!-- Desktop Navigation Menu -->
+                <nav class="hidden md:flex items-center space-x-6 text-sm font-semibold">
+                    <a href="#beranda" class="text-white hover:text-cyan-400 transition">Beranda</a>
+                    <a href="#desain" class="text-slate-200 hover:text-cyan-400 transition">Jasa Desain</a>
+                    <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" rel="noopener noreferrer" class="text-slate-200 hover:text-cyan-400 transition flex items-center gap-1.5">
+                        <i class="fa-brands fa-facebook text-blue-400"></i> Katalog FB
                     </a>
-                    <a href="#kalkulator" class="hover:text-navy transition py-2 border-b-2 border-transparent hover:border-navy">Hitung Cetak</a>
-                    <a href="#lokasi" class="hover:text-navy transition py-2 border-b-2 border-transparent hover:border-navy">Lokasi & Kontak</a>
-                </div>
+                    <a href="#lokasi" class="text-slate-200 hover:text-cyan-400 transition">Info Pemesanan</a>
+                    <a href="#katalog" class="text-slate-200 hover:text-cyan-400 transition">Daftar Harga</a>
+                </nav>
 
-                <!-- Right CTA Button -->
-                <div class="hidden lg:flex items-center">
-                    <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20order%20cetak" 
-                       target="_blank" 
-                       class="bg-waGreen hover:bg-waGreenHover text-white px-4 lg:px-5 py-2.5 rounded-xl font-bold shadow-md hover:shadow-lg transition duration-200 flex items-center gap-2 group text-sm">
-                        <i class="fa-brands fa-whatsapp text-lg group-hover:rotate-12 transition transform"></i>
+                <!-- CTA Button Header -->
+                <div class="hidden sm:flex items-center">
+                    <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20order%20cetak" target="_blank" rel="noopener noreferrer" class="bg-waGreen hover:bg-waGreenHover text-white px-4 py-2.5 rounded-xl font-bold text-xs sm:text-sm shadow-md transition flex items-center gap-2 active:scale-95">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
                         <span>Hubungi Kami</span>
                     </a>
                 </div>
 
-                <!-- Mobile Hamburger Button -->
-                <div class="md:hidden flex items-center">
-                    <button id="mobile-menu-btn" aria-label="Buka Menu" class="text-gray-700 hover:text-navy focus:outline-none p-2 rounded-lg hover:bg-gray-100">
-                        <i class="fa-solid fa-bars text-xl sm:text-2xl"></i>
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center gap-2">
+                    <button id="mobile-menu-btn" aria-label="Buka Menu" class="text-white hover:text-cyan-400 p-2 focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Menu Drawer -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-4 pt-3 pb-6 space-y-2.5 shadow-lg">
-            <a href="#beranda" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-navy-soft hover:text-navy">Beranda</a>
-            <a href="#jasa-desain" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-navy-soft hover:text-navy">Jasa Desain & Promo</a>
-            <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" class="mobile-nav-link flex items-center justify-between px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-navy-soft hover:text-navy">
-                <span>Katalog Facebook</span>
-                <i class="fa-solid fa-arrow-up-right-from-square text-xs text-blue-500"></i>
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-dark border-t border-slate-700/50 px-4 pt-3 pb-5 space-y-3">
+            <a href="#beranda" class="mobile-nav-link block py-2 text-white font-medium hover:text-cyan-400 border-b border-slate-800">Beranda</a>
+            <a href="#desain" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400 border-b border-slate-800">Jasa Desain</a>
+            <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" rel="noopener noreferrer" class="block py-2 text-slate-200 font-medium hover:text-cyan-400 border-b border-slate-800 flex items-center justify-between">
+                <span>Katalog FB</span>
+                <i class="fa-brands fa-facebook text-blue-400"></i>
             </a>
-            <a href="#kalkulator" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-navy-soft hover:text-navy">Kalkulator Estimasi Spanduk</a>
-            <a href="#lokasi" class="mobile-nav-link block px-3 py-2 rounded-lg font-medium text-gray-700 hover:bg-navy-soft hover:text-navy">Lokasi & Alamat Toko</a>
-            <div class="pt-3">
-                <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20order%20cetak" 
-                   target="_blank" 
-                   class="w-full bg-waGreen hover:bg-waGreenHover text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2 shadow text-sm">
-                    <i class="fa-brands fa-whatsapp text-lg"></i>
-                    <span>Hubungi via WhatsApp</span>
-                </a>
-            </div>
+            <a href="#katalog" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400 border-b border-slate-800">Daftar Harga</a>
+            <a href="#lokasi" class="mobile-nav-link block py-2 text-slate-200 font-medium hover:text-cyan-400">Info Pemesanan</a>
+            <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20order%20cetak" target="_blank" rel="noopener noreferrer" class="w-full bg-waGreen hover:bg-waGreenHover text-white py-3 rounded-xl font-bold text-center flex items-center justify-center gap-2 shadow-md">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Hubungi Kami via WA</span>
+            </a>
         </div>
-    </nav>
+    </header>
 
     <!-- HERO SECTION -->
-    <section id="beranda" class="bg-navy-dark text-white relative overflow-hidden py-8 xs:py-10 sm:py-16 md:py-20 lg:py-24">
-        <!-- Background Image Layer with Google Drive Bypass & Navy Overlay -->
-        <div class="absolute inset-0 z-0 pointer-events-none overflow-hidden">
+    <section id="beranda" class="relative bg-navy text-white min-h-[580px] sm:min-h-[640px] flex items-center overflow-hidden py-10 xs:py-12 sm:py-16">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
             <img id="hero-bg-img" 
                  src="https://lh3.googleusercontent.com/d/1JJLu9CzwQpmHGb16JtbTy6ZODjf5U_b0" 
-                 alt="Mesin Cetak Banner Kazayn Store" 
+                 alt="Mesin Printing Banner Kazayn Store" 
                  referrerpolicy="no-referrer"
                  onerror="handleHeroImgError(this)"
-                 class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity filter contrast-125" />
-            <div class="absolute inset-0 bg-navy-dark/85 bg-pattern"></div>
+                 class="w-full h-full object-cover object-center opacity-30 mix-blend-overlay">
+            <div class="absolute inset-0 bg-navy/80 bg-opacity-90"></div>
         </div>
 
-        <!-- Decorative Glow Circles -->
-        <div class="absolute -top-24 -right-24 w-60 h-60 sm:w-96 sm:h-96 bg-cyanAccent/15 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-24 -left-24 w-60 h-60 sm:w-96 sm:h-96 bg-waGreen/15 rounded-full blur-3xl pointer-events-none"></div>
-
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12 items-center">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
                 
-                <!-- Hero Left Content -->
-                <div class="lg:col-span-7 space-y-4 sm:space-y-6 text-center lg:text-left">
-                    <!-- Badge -->
-                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/20 text-cyan-300 text-[11px] xs:text-xs sm:text-sm font-semibold max-w-full">
-                        <i class="fa-solid fa-bolt text-yellow-400 shrink-0 text-xs sm:text-sm animate-pulse"></i>
-                        <span class="leading-tight">Mesin Printing High-Speed & Presisi Tinggi</span>
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-4 xs:space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-cyan-500/20 border border-cyan-400/30 text-cyan-300 text-xs sm:text-sm font-semibold backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span>Mesin Printing High-Speed & Presisi Tinggi</span>
                     </div>
 
-                    <!-- Headline -->
-                    <h1 class="text-xl xs:text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold leading-snug sm:leading-tight text-white tracking-tight">
+                    <!-- Machine Image under Badge -->
+                    <div class="w-full flex justify-center lg:justify-start">
+                        <img src="https://lh3.googleusercontent.com/d/10qyophmRjJfG0IN1bcyrcs01gCdAqdF9" 
+                             alt="Mesin Cetak Kazayn Store" 
+                             referrerpolicy="no-referrer"
+                             onerror="this.src='https://wsrv.nl/?url=https://drive.google.com/uc?id=10qyophmRjJfG0IN1bcyrcs01gCdAqdF9'"
+                             class="max-h-48 sm:max-h-64 md:max-h-80 lg:max-h-96 w-auto object-contain drop-shadow-2xl hover:scale-105 transition duration-300">
+                    </div>
+
+                    <h1 class="text-2xl xs:text-3xl sm:text-4xl lg:text-5xl font-black leading-tight tracking-tight">
                         Jasa Cetak Custom, Grosir & Satuan <br class="hidden sm:inline">
-                        <span class="text-cyan-300 block sm:inline mt-1 sm:mt-0">Cepat, Rapi & Bisa COD!</span>
+                        <span class="text-cyan-300">Cepat, Rapi & Bisa COD!</span>
                     </h1>
 
-                    <!-- Sub-headline -->
-                    <p class="text-xs xs:text-sm sm:text-base lg:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
-                        Solusi lengkap kebutuhan spanduk, banner, stiker, cetak kertas, hingga merchandise custom berkualitas tinggi diproses langsung dengan mesin digital printing modern.
+                    <p class="text-xs xs:text-sm sm:text-base md:text-lg text-slate-200 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Solusi lengkap kebutuhan spanduk, banner, stiker, cetak kertas, hingga merchandise custom untuk promosi bisnis Anda.
                     </p>
 
                     <!-- CTA Buttons -->
-                    <div class="flex flex-col xs:flex-row items-stretch xs:items-center justify-center lg:justify-start gap-2.5 sm:gap-4 pt-1 sm:pt-2">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20order%20cetak" 
-                           target="_blank"
-                           class="w-full xs:w-auto bg-waGreen hover:bg-waGreenHover text-white px-4 sm:px-7 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-bold text-xs sm:text-base shadow-xl hover:scale-[1.02] active:scale-95 transition transform flex items-center justify-center gap-2 sm:gap-3 border border-emerald-300/30">
-                            <i class="fa-brands fa-whatsapp text-base sm:text-2xl"></i>
-                            <span>Konsultasi & Order via WA</span>
+                    <div class="flex flex-col xs:flex-row items-center justify-center lg:justify-start gap-3 pt-2">
+                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20order%20cetak" target="_blank" rel="noopener noreferrer" class="w-full xs:w-auto bg-waGreen hover:bg-waGreenHover text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-xl transition flex items-center justify-center gap-2.5 active:scale-95 group">
+                            <i class="fa-brands fa-whatsapp text-xl group-hover:rotate-12 transition"></i>
+                            <span>Konsultasi & Order via WhatsApp</span>
                         </a>
-
-                        <a href="https://web.facebook.com/profile.php?id=61590528173429" 
-                           target="_blank" 
-                           class="w-full xs:w-auto bg-blue-600/90 hover:bg-blue-600 text-white border border-blue-400/40 px-4 sm:px-6 py-3 sm:py-4 rounded-xl sm:rounded-2xl font-semibold text-xs sm:text-base transition flex items-center justify-center gap-2 active:scale-95 shadow-lg">
-                            <i class="fa-brands fa-facebook text-base sm:text-xl"></i>
-                            <span>Katalog Facebook</span>
-                            <i class="fa-solid fa-arrow-up-right-from-square text-[9px] sm:text-xs opacity-80"></i>
+                        <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" rel="noopener noreferrer" class="w-full xs:w-auto bg-white/10 hover:bg-white/20 border border-white/30 text-white px-5 py-3.5 rounded-xl font-bold text-sm shadow-md transition flex items-center justify-center gap-2 active:scale-95">
+                            <i class="fa-brands fa-facebook text-blue-400 text-lg"></i>
+                            <span>Lihat Katalog Facebook</span>
                         </a>
                     </div>
 
-                    <!-- Trust Indicators Grid -->
-                    <div class="grid grid-cols-3 gap-2 sm:gap-6 pt-4 sm:pt-6 border-t border-white/15 max-w-lg mx-auto lg:mx-0">
-                        <div class="bg-white/5 sm:bg-transparent p-2 sm:p-0 rounded-xl text-center lg:text-left border border-white/5 sm:border-0">
-                            <p class="text-base xs:text-lg sm:text-3xl font-extrabold text-cyan-300">100%</p>
-                            <p class="text-[9px] xs:text-[10px] sm:text-xs text-slate-300">Garansi Kualitas</p>
+                    <!-- Trust Badges -->
+                    <div class="pt-4 grid grid-cols-3 gap-2 max-w-md mx-auto lg:mx-0 text-center">
+                        <div class="p-2 rounded-lg bg-white/5 border border-white/10">
+                            <p class="text-cyan-300 font-bold text-xs sm:text-sm">Bisa COD</p>
+                            <p class="text-[10px] text-slate-300">Bayar di Tempat</p>
                         </div>
-                        <div class="bg-white/5 sm:bg-transparent p-2 sm:p-0 rounded-xl text-center lg:text-left border border-white/5 sm:border-0">
-                            <p class="text-base xs:text-lg sm:text-3xl font-extrabold text-emerald-400">BISA</p>
-                            <p class="text-[9px] xs:text-[10px] sm:text-xs text-slate-300">Bayar COD *</p>
+                        <div class="p-2 rounded-lg bg-white/5 border border-white/10">
+                            <p class="text-cyan-300 font-bold text-xs sm:text-sm">Hasil Rapi</p>
+                            <p class="text-[10px] text-slate-300">Mesin Digital High-Res</p>
                         </div>
-                        <div class="bg-white/5 sm:bg-transparent p-2 sm:p-0 rounded-xl text-center lg:text-left border border-white/5 sm:border-0">
-                            <p class="text-base xs:text-lg sm:text-3xl font-extrabold text-cyan-300">1 Hari</p>
-                            <p class="text-[9px] xs:text-[10px] sm:text-xs text-slate-300">Cetak Ekspres</p>
+                        <div class="p-2 rounded-lg bg-white/5 border border-white/10">
+                            <p class="text-cyan-300 font-bold text-xs sm:text-sm">Kirim Se-Indo</p>
+                            <p class="text-[10px] text-slate-300">Pengiriman Aman</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Hero Right Interactive Card / Banner Display -->
-                <div class="lg:col-span-5 mt-4 lg:mt-0">
-                    <div class="bg-navy-dark/95 backdrop-blur-md p-3.5 xs:p-4 sm:p-6 lg:p-8 rounded-2xl sm:rounded-3xl border border-white/20 shadow-2xl space-y-3 sm:space-y-5">
-                        <div class="flex items-center justify-between border-b border-white/10 pb-2.5 sm:pb-4">
-                            <span class="text-[10px] xs:text-[11px] sm:text-xs font-bold uppercase tracking-wider text-cyan-300 flex items-center gap-1.5">
-                                <i class="fa-solid fa-print"></i>
-                                Mesin High-Speed Ready
+                <!-- Right Card Highlight -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-5 sm:p-6 border border-white/20 shadow-2xl text-white space-y-4">
+                        <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                            <span class="font-bold text-sm sm:text-base text-cyan-300 flex items-center gap-2">
+                                <i class="fa-solid fa-fire text-amber-400"></i> Best Seller Pekan Ini
                             </span>
-                            <span class="bg-emerald-500 text-white text-[8px] xs:text-[9px] sm:text-[10px] font-extrabold px-2 py-0.5 sm:py-1 rounded-full uppercase tracking-wider">Cetak Hari Ini</span>
+                            <span class="text-[11px] bg-red-500/80 px-2 py-0.5 rounded-full font-bold">Populer</span>
                         </div>
 
-                        <div class="space-y-2.5 sm:space-y-3">
-                            <!-- Banner Item Mini Highlight -->
-                            <div class="bg-white/10 p-2.5 xs:p-3 sm:p-4 rounded-xl flex items-center gap-2.5 sm:gap-3 border border-white/10 hover:bg-white/15 transition">
-                                <div class="w-8 h-8 xs:w-9 xs:h-9 sm:w-12 sm:h-12 bg-cyan-500/20 text-cyan-300 rounded-lg flex items-center justify-center text-sm xs:text-base sm:text-xl shrink-0">
-                                    <i class="fa-solid fa-scroll"></i>
+                        <div class="space-y-3 text-xs sm:text-sm">
+                            <div class="flex items-start justify-between gap-2 p-2.5 rounded-xl bg-white/5">
+                                <div>
+                                    <p class="font-bold text-white">Spanduk Flexy Printing</p>
+                                    <p class="text-[11px] text-slate-300">Outdoor High-Res</p>
                                 </div>
-                                <div class="grow min-w-0">
-                                    <h4 class="font-bold text-[11px] xs:text-xs sm:text-sm text-white truncate">Spanduk Flexy Printing</h4>
-                                    <p class="text-[9px] xs:text-[10px] sm:text-xs text-slate-300 truncate">Banner promo & spanduk outdoor</p>
-                                </div>
-                                <span class="font-extrabold text-cyan-300 text-xs sm:text-sm shrink-0 whitespace-nowrap">Rp50k<span class="text-[9px] sm:text-[10px] font-normal text-slate-300">/m²</span></span>
+                                <span class="font-extrabold text-cyan-300 text-sm">Rp50.000 / m²</span>
                             </div>
-
-                            <!-- Banner Item Mini Highlight -->
-                            <div class="bg-white/10 p-2.5 xs:p-3 sm:p-4 rounded-xl flex items-center gap-2.5 sm:gap-3 border border-white/10 hover:bg-white/15 transition">
-                                <div class="w-8 h-8 xs:w-9 xs:h-9 sm:w-12 sm:h-12 bg-emerald-500/20 text-emerald-300 rounded-lg flex items-center justify-center text-sm xs:text-base sm:text-xl shrink-0">
-                                    <i class="fa-solid fa-id-badge"></i>
+                            <div class="flex items-start justify-between gap-2 p-2.5 rounded-xl bg-white/5">
+                                <div>
+                                    <p class="font-bold text-white">X-Banner 60x160cm</p>
+                                    <p class="text-[11px] text-slate-300">Lengkap Stand & Cetak</p>
                                 </div>
-                                <div class="grow min-w-0">
-                                    <h4 class="font-bold text-[11px] xs:text-xs sm:text-sm text-white truncate">Lanyard & ID Card Custom</h4>
-                                    <p class="text-[9px] xs:text-[10px] sm:text-xs text-slate-300 truncate">Kebutuhan kantor & event</p>
-                                </div>
-                                <span class="font-extrabold text-emerald-300 text-xs sm:text-sm shrink-0 whitespace-nowrap">Rp21,5k<span class="text-[9px] sm:text-[10px] font-normal text-slate-300">/pcs</span></span>
+                                <span class="font-extrabold text-cyan-300 text-sm">Rp130.000 / set</span>
                             </div>
-
-                            <!-- Banner Item Mini Highlight -->
-                            <div class="bg-white/10 p-2.5 xs:p-3 sm:p-4 rounded-xl flex items-center gap-2.5 sm:gap-3 border border-white/10 hover:bg-white/15 transition">
-                                <div class="w-8 h-8 xs:w-9 xs:h-9 sm:w-12 sm:h-12 bg-purple-500/20 text-purple-300 rounded-lg flex items-center justify-center text-sm xs:text-base sm:text-xl shrink-0">
-                                    <i class="fa-solid fa-note-sticky"></i>
+                            <div class="flex items-start justify-between gap-2 p-2.5 rounded-xl bg-white/5">
+                                <div>
+                                    <p class="font-bold text-white">Promo Desain + Banner</p>
+                                    <p class="text-[11px] text-slate-300">Jasa Desain Paket Hemat</p>
                                 </div>
-                                <div class="grow min-w-0">
-                                    <h4 class="font-bold text-[11px] xs:text-xs sm:text-sm text-white truncate">Stiker DTF UV & Cut A3</h4>
-                                    <p class="text-[9px] xs:text-[10px] sm:text-xs text-slate-300 truncate">Tahan air & cetak tajam</p>
-                                </div>
-                                <span class="font-extrabold text-purple-300 text-xs sm:text-sm shrink-0 whitespace-nowrap">Rp28,5k<span class="text-[9px] sm:text-[10px] font-normal text-slate-300">/lbr</span></span>
+                                <span class="font-extrabold text-amber-300 text-sm">HANYA Rp30.000!</span>
                             </div>
                         </div>
 
-                        <div class="bg-yellow-400/15 border border-yellow-400/40 rounded-xl p-2.5 xs:p-3 flex items-center gap-2">
-                            <i class="fa-solid fa-tags text-yellow-400 text-sm xs:text-base sm:text-lg shrink-0"></i>
-                            <p class="text-[10px] xs:text-[11px] sm:text-xs text-yellow-100 leading-tight">
-                                <strong class="text-yellow-400">Promo Desain Banner:</strong> Hanya <strong>Rp30.000</strong> jika cetak spanduk!
-                            </p>
-                        </div>
+                        <a href="#katalog" class="block w-full bg-cyan-500 hover:bg-cyan-600 text-navy font-extrabold py-3 rounded-xl text-center text-xs sm:text-sm transition shadow-md">
+                            Pesan Banner Sekarang <i class="fa-solid fa-arrow-right ml-1"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -303,1027 +245,870 @@
         </div>
     </section>
 
-    <!-- SECTION 3: JASA DESAIN & KETENTUAN PEMBAYARAN -->
-    <section id="jasa-desain" class="py-12 sm:py-16 bg-white relative">
+    <!-- SEKSI JASA DESAIN & KETENTUAN PEMBAYARAN -->
+    <section id="desain" class="py-12 sm:py-16 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-8 sm:mb-12">
-                <span class="text-navy font-bold text-xs sm:text-sm uppercase tracking-wider bg-navy-soft px-3 py-1 rounded-full">Layanan Desain & Ketentuan</span>
-                <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-navy mt-3">Jasa Desain Profesional & Sistem Bayar Aman</h2>
-                <p class="text-xs sm:text-sm text-gray-600 mt-2">Belum punya desain? Tim desainer Kazayn Store siap merancang desain terbaik untuk promosi bisnis Anda.</p>
+            
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <span class="text-xs font-bold text-cyan-600 uppercase tracking-widest bg-cyan-50 px-3 py-1 rounded-full border border-cyan-100">Layanan Desain & Ketentuan</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy mt-2">Jasa Desain Profesional & Sistem Bayar Aman</h2>
+                <p class="text-slate-600 text-xs sm:text-sm mt-2">Belum punya desain? Tim desainer Kazayn Store siap merancang desain terbaik untuk promosi bisnis Anda.</p>
+                
+                <!-- Section Image -->
+                <div class="w-full flex justify-center mt-4">
+                    <img src="https://lh3.googleusercontent.com/d/1Zv4tc3wyEJEQb3z2gqyIxERUi6eFd_AK" 
+                         alt="Jasa Desain Banner Kazayn Store" 
+                         referrerpolicy="no-referrer"
+                         onerror="this.src='https://wsrv.nl/?url=https://drive.google.com/uc?id=1Zv4tc3wyEJEQb3z2gqyIxERUi6eFd_AK'"
+                         class="max-h-64 sm:max-h-80 md:max-h-[420px] w-auto object-contain drop-shadow-xl hover:scale-102 transition duration-300">
+                </div>
             </div>
 
-            <!-- Promo Highlight Grid -->
-            <div class="grid md:grid-cols-2 gap-6 sm:gap-8 items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 
-                <!-- CARD 1: PAKET HARGA DESAIN -->
-                <div class="bg-gradient-to-br from-navy to-navy-dark rounded-2xl sm:rounded-3xl p-5 sm:p-8 text-white shadow-xl relative overflow-hidden flex flex-col justify-between">
-                    <div class="absolute -right-10 -bottom-10 text-white/5 text-8xl sm:text-9xl pointer-events-none">
-                        <i class="fa-solid fa-pen-nib"></i>
+                <!-- Promo Desain Box -->
+                <div class="bg-gradient-to-br from-amber-50 to-orange-50 border-2 border-amber-300 rounded-2xl p-6 shadow-md relative overflow-hidden flex flex-col justify-between">
+                    <div class="absolute -right-6 -top-6 bg-amber-400 text-slate-900 font-extrabold text-[10px] uppercase tracking-wider py-8 px-10 rotate-45 text-center shadow-sm">
+                        PROMO
                     </div>
-
                     <div>
-                        <div class="flex items-center justify-between mb-4 sm:mb-6">
-                            <span class="bg-cyanAccent/20 text-cyan-300 text-[10px] sm:text-xs font-bold px-2.5 py-1 rounded-full border border-cyanAccent/30">
-                                Layanan Desain Grafis
-                            </span>
-                            <span class="text-yellow-400 font-extrabold text-[10px] sm:text-xs uppercase tracking-wider flex items-center gap-1">
-                                <i class="fa-solid fa-star"></i> Terfavorit
-                            </span>
-                        </div>
-
-                        <h3 class="text-xl sm:text-2xl font-bold mb-2">Pilihan Paket Desain</h3>
-                        <p class="text-slate-300 text-xs sm:text-sm mb-5 sm:mb-6">Sesuaikan dengan kebutuhan cetak Anda, pengerjaan cepat & revisi komunikatif.</p>
-
-                        <div class="space-y-3 sm:space-y-4">
-                            <!-- Price Option 1 -->
-                            <div class="bg-white/10 backdrop-blur-md p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-white/15 flex flex-wrap items-center justify-between gap-2">
-                                <div>
-                                    <h4 class="font-bold text-white text-sm sm:text-base">Jasa Desain Tanpa Cetak</h4>
-                                    <p class="text-[10px] sm:text-xs text-slate-300">File master dikirim lengkap (JPG, PNG, PDF/CDR)</p>
-                                </div>
-                                <div class="text-right ml-auto sm:ml-0">
-                                    <span class="text-xl sm:text-2xl font-extrabold text-white">Rp100.000</span>
-                                </div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center text-lg font-bold shadow-sm">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
                             </div>
-
-                            <!-- Price Option 2 PROMO -->
-                            <div class="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 backdrop-blur-md p-3.5 sm:p-4 rounded-xl sm:rounded-2xl border border-yellow-400/40 relative">
-                                <span class="absolute -top-2.5 right-3 bg-yellow-400 text-navy font-black text-[9px] sm:text-[10px] px-2 py-0.5 rounded-full uppercase tracking-wider shadow">
-                                    PROMO SPESIAL
-                                </span>
-                                <div class="flex flex-wrap items-center justify-between gap-2">
-                                    <div>
-                                        <h4 class="font-bold text-yellow-300 text-sm sm:text-base">Jasa Desain + Order Cetak Banner</h4>
-                                        <p class="text-[10px] sm:text-xs text-slate-200">Hemat lebih dari 70% khusus order cetak banner!</p>
-                                    </div>
-                                    <div class="text-right ml-auto sm:ml-0">
-                                        <span class="text-[10px] sm:text-xs line-through text-slate-400 block">Rp100.000</span>
-                                        <span class="text-xl sm:text-2xl font-extrabold text-yellow-400">Rp30.000</span>
-                                    </div>
-                                </div>
+                            <div>
+                                <h3 class="font-extrabold text-lg text-slate-900">Jasa Desain Custom</h3>
+                                <p class="text-xs text-amber-800 font-medium">Bisa Revisi Sampai Cocok</p>
                             </div>
                         </div>
+
+                        <ul class="space-y-3 my-4 text-xs sm:text-sm text-slate-700">
+                            <li class="flex items-start gap-2.5">
+                                <i class="fa-solid fa-circle-check text-amber-600 mt-0.5 shrink-0"></i>
+                                <div class="space-y-2 w-full">
+                                    <strong class="text-slate-900 block text-sm">Daftar Harga Jasa Desain Tanpa Cetak:</strong>
+                                    
+                                    <div class="p-2.5 rounded-xl bg-white/80 border border-amber-200 space-y-1 text-xs">
+                                        <div class="flex items-center justify-between font-bold text-amber-950">
+                                            <span>• Desain Besar / Kesulitan Tinggi</span>
+                                            <span class="text-navy bg-amber-200/80 px-2 py-0.5 rounded-md font-extrabold">Rp100.000</span>
+                                        </div>
+                                        <p class="text-[11px] text-slate-600 pl-2">Spanduk, banner, spanduk kain, X-banner, roll up, booth, dll.</p>
+                                    </div>
+
+                                    <div class="p-2.5 rounded-xl bg-white/80 border border-amber-200 space-y-1 text-xs">
+                                        <div class="flex items-center justify-between font-bold text-amber-950">
+                                            <span>• Desain Produk & Branding</span>
+                                            <span class="text-navy bg-amber-200/80 px-2 py-0.5 rounded-md font-extrabold">Rp50.000</span>
+                                        </div>
+                                        <p class="text-[11px] text-slate-600 pl-2">Logo, menu makanan, stiker, undangan pernikahan, totebag, botol minuman, dll.</p>
+                                    </div>
+
+                                    <div class="p-2.5 rounded-xl bg-white/80 border border-amber-200 space-y-1 text-xs">
+                                        <div class="flex items-center justify-between font-bold text-amber-950">
+                                            <span>• Desain Medsos & Promosi</span>
+                                            <span class="text-navy bg-amber-200/80 px-2 py-0.5 rounded-md font-extrabold">Rp35.000</span>
+                                        </div>
+                                        <p class="text-[11px] text-slate-600 pl-2">Feed Instagram, Facebook, banner promosi medsos, dll.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex flex-col gap-1 bg-amber-200/60 p-3 rounded-xl border border-amber-300">
+                                <div class="flex items-start gap-2.5">
+                                    <i class="fa-solid fa-star text-amber-600 mt-0.5 shrink-0"></i>
+                                    <span><strong>PROMO SPESIAL:</strong> Jasa Desain + Order Cetak Banner HANYA <strong class="text-red-600 font-extrabold text-sm sm:text-base">Rp30.000!</strong></span>
+                                </div>
+                                <p class="text-[11px] text-amber-900 font-medium italic pl-6 mt-1">
+                                    <i class="fa-solid fa-circle-info mr-1"></i>Anda dapat memilih dan order langsung produk spanduk / banner di daftar katalog harga di bawah untuk mendapatkan promo ini.
+                                </p>
+                            </li>
+                        </ul>
                     </div>
 
-                    <div class="mt-6 sm:mt-8 pt-4 border-t border-white/10">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20jasa%20desain" 
-                           target="_blank"
-                           class="w-full bg-cyanAccent hover:bg-cyan-500 text-navy font-bold py-3 px-5 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-wand-magic-sparkles"></i>
-                            <span>Pesan Jasa Desain Sekarang</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Jasa Desain Custom (Tanpa Cetak)', 'desain-saja')" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-4 rounded-xl text-center text-xs sm:text-sm shadow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-pen-nib text-lg"></i>
+                        <span>Pesan Jasa Desain Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- CARD 2: SYARAT & KETENTUAN PEMBAYARAN -->
-                <div class="bg-slate-50 border-2 border-slate-200 rounded-2xl sm:rounded-3xl p-5 sm:p-8 shadow-sm flex flex-col justify-between">
+                <!-- Ketentuan Pembayaran Box -->
+                <div class="bg-slate-900 text-white border border-slate-800 rounded-2xl p-6 shadow-md flex flex-col justify-between">
                     <div>
-                        <div class="flex items-center gap-3 mb-5 sm:mb-6">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-lg sm:text-xl font-bold shrink-0">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="w-10 h-10 rounded-xl bg-cyan-500 text-navy flex items-center justify-center text-lg font-bold shadow-sm">
                                 <i class="fa-solid fa-shield-halved"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg sm:text-xl font-bold text-navy">Syarat & Ketentuan Pembayaran</h3>
-                                <p class="text-[11px] sm:text-xs text-gray-500">Transparan, jujur & saling percaya</p>
+                                <h3 class="font-extrabold text-lg text-white">Syarat & Ketentuan Pembayaran</h3>
+                                <p class="text-xs text-cyan-400 font-medium">Transaksi Aman & Transparan</p>
                             </div>
                         </div>
 
-                        <div class="space-y-3.5 sm:space-y-4">
-                            <!-- Payment Term 1 -->
-                            <div class="bg-white p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-gray-200 shadow-sm flex items-start gap-3.5">
-                                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-navy/10 text-navy flex items-center justify-center font-bold text-xs sm:text-sm shrink-0 mt-0.5">
-                                    1
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-gray-800 text-xs sm:text-sm">Pembayaran Jasa Desain</h4>
-                                    <p class="text-[11px] sm:text-xs text-gray-600 mt-1 leading-relaxed">
-                                        Wajib dibayar di awal jika sketsa / draft desain awal sudah dibuat oleh tim desainer kami.
-                                    </p>
-                                </div>
+                        <div class="space-y-4 my-4 text-xs sm:text-sm text-slate-300">
+                            <div class="p-3 rounded-xl bg-slate-800/80 border border-slate-700/60 space-y-1">
+                                <p class="font-bold text-white flex items-center gap-2">
+                                    <i class="fa-solid fa-circle-info text-cyan-400"></i> Ketentuan Jasa Desain:
+                                </p>
+                                <p class="text-slate-300 text-xs pl-6">
+                                    Wajib dibayar di awal setelah sketsa / draft desain pertama dibuat oleh tim kami.
+                                </p>
                             </div>
 
-                            <!-- Payment Term 2 COD -->
-                            <div class="bg-emerald-50/80 p-4 sm:p-5 rounded-xl sm:rounded-2xl border border-emerald-200 shadow-sm flex items-start gap-3.5">
-                                <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center font-bold text-xs sm:text-sm shrink-0 mt-0.5">
-                                    2
-                                </div>
-                                <div>
-                                    <div class="flex flex-wrap items-center gap-1.5 sm:gap-2">
-                                        <h4 class="font-bold text-emerald-900 text-xs sm:text-sm">Cetak Spanduk & Banner BISA COD!</h4>
-                                        <span class="bg-emerald-600 text-white text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded">Bayar di Tempat</span>
-                                    </div>
-                                    <p class="text-[11px] sm:text-xs text-emerald-800 mt-1 leading-relaxed">
-                                        Khusus pesanan cetak Spanduk & Banner, Anda bisa memilih opsi pembayar <strong>COD (Cash on Delivery)</strong> ketika barang diterima!
-                                    </p>
-                                </div>
+                            <div class="p-3 rounded-xl bg-cyan-950/60 border border-cyan-800/60 space-y-1">
+                                <p class="font-bold text-cyan-300 flex items-center gap-2">
+                                    <i class="fa-solid fa-handshake-simple text-cyan-400"></i> Cetak Spanduk & Banner:
+                                </p>
+                                <p class="text-slate-200 text-xs pl-6 font-semibold">
+                                    BISA COD / Bayar di Tempat! (Berlaku untuk area & ketentuan pengiriman yang mendukung).
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <div class="mt-6 sm:mt-8 bg-blue-50 p-3.5 sm:p-4 rounded-xl border border-blue-100 flex items-center gap-3">
-                        <i class="fa-solid fa-circle-info text-navy text-base sm:text-lg shrink-0"></i>
-                        <p class="text-[11px] sm:text-xs text-navy font-medium">
-                            Butuh bantuan lebih lanjut tentang metode pembayaran & pengiriman? Tim CS kami siap melayani Anda.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- INTERACTIVE BANNER CALCULATOR -->
-    <section id="kalkulator" class="py-10 sm:py-14 bg-navy-soft border-y border-navy/10">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6">
-            <div class="bg-white rounded-2xl sm:rounded-3xl shadow-lg p-5 sm:p-8 border border-gray-100">
-                <div class="text-center mb-5 sm:mb-6">
-                    <span class="bg-cyan-100 text-cyan-800 text-[10px] sm:text-xs font-bold px-3 py-1 rounded-full uppercase">Kalkulator Harga Otomatis</span>
-                    <h3 class="text-xl sm:text-2xl font-bold text-navy mt-2">Hitung Estimasi Harga Spanduk Flexy Printing</h3>
-                    <p class="text-[11px] sm:text-xs text-gray-500 mt-0.5">Masukkan ukuran spanduk yang ingin Anda cetak (Rp50.000 / m²)</p>
-                </div>
-
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3.5 sm:gap-4 items-end bg-slate-50 p-4 rounded-xl sm:rounded-2xl border border-slate-200">
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">Panjang (Meter)</label>
-                        <input type="number" id="calc-width" value="3" min="0.5" step="0.5" class="w-full px-3 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-navy focus:outline-none font-semibold text-gray-800 text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">Lebar (Meter)</label>
-                        <input type="number" id="calc-height" value="1" min="0.5" step="0.5" class="w-full px-3 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-navy focus:outline-none font-semibold text-gray-800 text-sm">
-                    </div>
-                    <div>
-                        <label class="block text-xs font-bold text-gray-700 mb-1">Jumlah (Pcs)</label>
-                        <input type="number" id="calc-qty" value="1" min="1" class="w-full px-3 py-2 border border-gray-300 rounded-xl focus:ring-2 focus:ring-navy focus:outline-none font-semibold text-gray-800 text-sm">
-                    </div>
-                </div>
-
-                <div class="mt-5 sm:mt-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-between bg-navy text-white p-4 sm:p-5 rounded-xl sm:rounded-2xl gap-4">
-                    <div>
-                        <span class="text-[11px] sm:text-xs text-slate-300 block">Total Luas & Estimasi Biaya:</span>
-                        <div class="flex items-baseline gap-2 flex-wrap mt-0.5">
-                            <span id="calc-total-area" class="text-xs sm:text-sm font-semibold text-cyan-300">3 m²</span>
-                            <span class="text-slate-400 hidden sm:inline">|</span>
-                            <span id="calc-total-price" class="text-xl sm:text-2xl font-black text-yellow-400">Rp 150.000</span>
-                        </div>
-                    </div>
-                    <a id="calc-wa-btn" href="#" target="_blank" class="w-full sm:w-auto bg-waGreen hover:bg-waGreenHover text-white px-5 py-3 rounded-xl font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow shrink-0">
-                        <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
-                        <span>Pesan Ukuran Ini via WA</span>
+                    <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20tanya%20syarat%20pembayaran%20dan%20COD" target="_blank" rel="noopener noreferrer" class="w-full bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 px-4 rounded-xl text-center text-xs sm:text-sm border border-slate-700 transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg text-waGreen"></i>
+                        <span>Tanya Ketentuan COD via WA</span>
                     </a>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- SECTION 4: KATALOG LAYANAN & DAFTAR HARGA JUAL -->
-    <section id="katalog" class="py-12 sm:py-16 bg-slate-50">
+    <!-- KATALOG LAYANAN & DAFTAR HARGA JUAL -->
+    <section id="katalog" class="py-12 sm:py-16 bg-slate-100/80">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
-            <!-- Facebook Banner Callout -->
-            <div class="mb-8 bg-gradient-to-r from-blue-950 via-navy to-blue-900 rounded-2xl sm:rounded-3xl p-5 sm:p-8 text-white shadow-xl border border-blue-800/50 flex flex-col md:flex-row items-start md:items-center justify-between gap-5 sm:gap-6">
-                <div class="flex items-start sm:items-center gap-3.5 sm:gap-4">
-                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-blue-600/30 text-blue-400 rounded-xl sm:rounded-2xl flex items-center justify-center text-2xl sm:text-3xl shrink-0 border border-blue-500/30">
-                        <i class="fa-brands fa-facebook"></i>
+            <div class="text-center max-w-3xl mx-auto mb-8">
+                <span class="text-xs font-bold text-navy uppercase tracking-widest bg-slate-200 px-3 py-1 rounded-full">Katalog Lengkap</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-navy mt-2">Daftar Produk & Harga Cetak</h2>
+                <p class="text-slate-600 text-xs sm:text-sm mt-2">Pilih produk percetakan yang Anda butuhkan dan klik tombol <strong>"Order Sekarang"</strong> untuk konfirmasi instan.</p>
+            </div>
+
+            <!-- Facebook Catalog Banner Promo -->
+            <div class="mb-8 bg-gradient-to-r from-blue-700 to-indigo-900 rounded-2xl p-4 sm:p-6 text-white shadow-lg flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4 text-center sm:text-left">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white/10 rounded-2xl flex items-center justify-center text-2xl shrink-0">
+                        <i class="fa-brands fa-facebook text-blue-300"></i>
                     </div>
                     <div>
-                        <span class="bg-blue-500/20 text-blue-300 text-[10px] sm:text-xs font-bold px-2.5 py-0.5 sm:py-1 rounded-full border border-blue-400/30 uppercase tracking-wider">Katalog Resmi Facebook</span>
-                        <h3 class="text-lg sm:text-2xl font-bold mt-1 text-white">Lihat Galeri Hasil Cetak & Portofolio Kami</h3>
-                        <p class="text-xs sm:text-sm text-slate-300 mt-0.5">Update katalog lengkap, sampel produk, dan promo terbaru di halaman Facebook resmi Kazayn Store.</p>
+                        <h3 class="font-extrabold text-base sm:text-lg">Lihat Hasil Portofolio & Katalog Lengkap</h3>
+                        <p class="text-xs sm:text-sm text-blue-200">Kunjungi halaman Facebook resmi Kazayn Store Percetakan untuk update produk terbaru.</p>
                     </div>
                 </div>
-                <a href="https://web.facebook.com/profile.php?id=61590528173429" 
-                   target="_blank" 
-                   class="shrink-0 w-full md:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold py-3 px-5 rounded-xl text-xs sm:text-sm transition flex items-center justify-center gap-2 shadow-lg border border-blue-400/30">
-                    <i class="fa-brands fa-facebook text-base sm:text-lg"></i>
+                <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" rel="noopener noreferrer" class="shrink-0 bg-white hover:bg-slate-100 text-navy font-extrabold px-5 py-3 rounded-xl text-xs sm:text-sm shadow-md transition flex items-center gap-2 active:scale-95">
                     <span>Buka Katalog Facebook</span>
-                    <i class="fa-solid fa-arrow-up-right-from-square text-[10px] ml-1"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
 
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 sm:mb-10 gap-5">
-                <div>
-                    <span class="text-navy font-bold text-xs sm:text-sm uppercase tracking-wider bg-navy-soft px-3 py-1 rounded-full">Katalog Produk Lengkap</span>
-                    <h2 class="text-2xl sm:text-4xl font-extrabold text-navy mt-2">Daftar Harga Transparan & Terbaik</h2>
-                    <p class="text-xs sm:text-sm text-gray-600 mt-1">Pilih kategori atau gunakan fitur pencarian untuk menemukan produk percetakan yang Anda butuhkan.</p>
-                </div>
-
-                <!-- Live Search Box -->
-                <div class="relative w-full md:w-72">
-                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-gray-400 text-xs sm:text-sm"></i>
-                    <input type="text" id="search-input" placeholder="Cari nama produk..." class="w-full pl-9 pr-4 py-2.5 bg-white border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy shadow-sm">
-                </div>
+            <!-- Filter Categories -->
+            <div class="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-6 no-scrollbar">
+                <button onclick="filterCatalog('all')" class="catalog-tab bg-navy text-white px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition shadow-sm">Semua Produk</button>
+                <button onclick="filterCatalog('spanduk')" class="catalog-tab bg-white text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition shadow-sm">Spanduk & Display</button>
+                <button onclick="filterCatalog('kertas')" class="catalog-tab bg-white text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition shadow-sm">Cetak Kertas</button>
+                <button onclick="filterCatalog('stiker')" class="catalog-tab bg-white text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition shadow-sm">Stiker & Cutting</button>
+                <button onclick="filterCatalog('merchandise')" class="catalog-tab bg-white text-slate-700 hover:bg-slate-200 px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition shadow-sm">Merchandise</button>
             </div>
 
-            <!-- Filter Tabs -->
-            <div class="flex items-center gap-2 overflow-x-auto pb-3 mb-6 sm:mb-8 no-scrollbar scroll-smooth -mx-4 px-4 sm:mx-0 sm:px-0">
-                <button data-category="all" class="filter-tab active bg-navy text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm whitespace-nowrap shadow transition">
-                    <i class="fa-solid fa-border-all mr-1.5"></i> Semua Produk
-                </button>
-                <button data-category="banner" class="filter-tab bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm whitespace-nowrap transition">
-                    <i class="fa-solid fa-scroll mr-1.5 text-navy"></i> Spanduk & Banner
-                </button>
-                <button data-category="kertas" class="filter-tab bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm whitespace-nowrap transition">
-                    <i class="fa-solid fa-copy mr-1.5 text-navy"></i> Print & Kertas
-                </button>
-                <button data-category="stiker" class="filter-tab bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm whitespace-nowrap transition">
-                    <i class="fa-solid fa-note-sticky mr-1.5 text-navy"></i> Stiker & Cutting
-                </button>
-                <button data-category="merchandise" class="filter-tab bg-white hover:bg-gray-100 text-gray-700 border border-gray-200 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl font-semibold text-xs sm:text-sm whitespace-nowrap transition">
-                    <i class="fa-solid fa-gift mr-1.5 text-navy"></i> Merchandise & Souvenir
-                </button>
-            </div>
-
-            <!-- Catalog Grid Container -->
-            <div id="catalog-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
-
-                <!-- KATEGORI A: SPANDUK, BANNER & DISPLAY PROMO -->
+            <!-- CATALOG GRID -->
+            <div id="catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
                 
-                <!-- Product Card 1 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="Spanduk Banner Backdrop Flexy Printing">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Spanduk & Banner</span>
-                            <span class="bg-emerald-100 text-emerald-800 text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded">Bisa COD</span>
+                <!-- CATEGORY A: SPANDUK, BANNER & DISPLAY PROMO -->
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Spanduk & Banner</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Min. 1 m²</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Spanduk / Banner / Backdrop</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Flexy Printing standar promosi outdoor & indoor.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp50.000 <span class="text-xs font-normal text-gray-500">/ m²</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Spanduk / Banner / Backdrop Flexy Printing</h3>
+                        <p class="text-xs text-slate-500 mt-1">Bahan Flexy Printing outdoor tahan cuaca, warna tajam.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp50.000 <span class="text-xs font-normal text-slate-500">/ m²</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Spanduk%20Banner%20Backdrop" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Spanduk / Banner / Backdrop Flexy Printing', 'spanduk-flexy')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 2 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="Spanduk Kain Umbul-Umbul Kain TC">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Spanduk & Banner</span>
-                            <span class="bg-emerald-100 text-emerald-800 text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded">Bisa COD</span>
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Spanduk & Banner</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Cetak Kain</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Spanduk Kain / Umbul-Umbul</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Kain TC berkualitas tinggi untuk bendera/umbul-umbul.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp70.000 <span class="text-xs font-normal text-gray-500">/ m</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Spanduk Kain / Umbul-Umbul (Kain TC)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Bahan kain TC khusus umbul-umbul & bendera promosi.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp70.000 <span class="text-xs font-normal text-slate-500">/ m</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Spanduk%20Kain%20Umbul-Umbul" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Spanduk Kain / Umbul-Umbul (Kain TC)', 'spanduk-kain')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 3 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="Mini Banner Bahan Kertas Artpaper">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Display Promo</span>
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Display Promo</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Ringkas</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Mini Banner Desk</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Kertas Artpaper lengkap dengan penyangga meja.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp70.000 <span class="text-xs font-normal text-gray-500">/ set</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Mini Banner (Artpaper)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Lengkap dengan penyangga mini untuk meja kasir / promosi.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp70.000 <span class="text-xs font-normal text-slate-500">/ set</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Mini%20Banner" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Mini Banner (Artpaper)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 4 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="X Banner 60x160cm Flexy Printing">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Display Promo</span>
-                            <span class="bg-amber-100 text-amber-800 text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded">Populer</span>
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Display Promo</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">60x160 cm</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">X-Banner 60x160cm</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Flexy Printing tebal + penyangga rangka X komplit.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp95.000 <span class="text-xs font-normal text-gray-500">/ set</span></span>
+                        <h3 class="font-extrabold text-navy text-base">X-Banner 60x160cm Flexy Printing</h3>
+                        <p class="text-xs text-slate-500 mt-1">Bahan Flexy Printing + tiang penyangga x-banner.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp130.000 <span class="text-xs font-normal text-slate-500">/ set</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20X-Banner%2060x160cm" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('X-Banner 60x160cm Flexy Printing', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 5 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="Roll Up Banner 60x160cm Flexy Printing">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Display Promo</span>
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Display Promo</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">60x160 cm</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Roll Up Banner 60x160cm</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Flexy Printing + Tiang Roll Up Aluminium Praktis.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp260.000 <span class="text-xs font-normal text-gray-500">/ set</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Roll Up Banner 60x160cm Flexy Printing</h3>
+                        <p class="text-xs text-slate-500 mt-1">Bahan Flexy Printing + aluminium Roll Up tiang kokoh.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp260.000 <span class="text-xs font-normal text-slate-500">/ set</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Roll%20Up%20Banner%2060x160cm" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Roll Up Banner 60x160cm Flexy Printing', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 6 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="Roll Up Banner 80x200cm Flexy Printing">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Display Promo</span>
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Display Promo</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">80x200 cm</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Roll Up Banner 80x200cm</h3>
-                        <p class="text-xs text-gray-500 mt-1">Ukuran Besar Elegan, Bahan Flexy Printing + Body Alumunium.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp310.000 <span class="text-xs font-normal text-gray-500">/ set</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Roll Up Banner 80x200cm Flexy Printing</h3>
+                        <p class="text-xs text-slate-500 mt-1">Ukuran besar elegan untuk pameran & event.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp310.000 <span class="text-xs font-normal text-slate-500">/ set</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Roll%20Up%20Banner%2080x200cm" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Roll Up Banner 80x200cm Flexy Printing', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 7 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="Tripod Banner 1 Sisi Display Stand">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Display Promo</span>
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Display Promo</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">1 Sisi</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Tripod Banner (1 Sisi)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Stand kaki tripod fleksibel + cetak visual resolusi tinggi.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp327.000 <span class="text-xs font-normal text-gray-500">/ set</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Tripod Banner (1 Sisi)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Stand tripod besi termasuk cetak infraboard / impraboard.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp388.000 <span class="text-xs font-normal text-slate-500">/ set</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Tripod%20Banner" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Tripod Banner (1 Sisi)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 8 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="banner" data-title="Event Desk Portable Booth Pameran">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-blue-50 text-navy font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Display Promo</span>
+                <div class="catalog-item cat-spanduk bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-cyan-700 bg-cyan-50 px-2.5 py-1 rounded-md">Booth Pameran</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Portable Set</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Event Desk Portable</h3>
-                        <p class="text-xs text-gray-500 mt-1">Meja Promosi / Stand Booth pameran komplit + Branding Stiker.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp934.000 <span class="text-xs font-normal text-gray-500">/ set</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Event Desk Portable (1 Set)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Meja booth promosi praktis bongkar pasang + cetak sticker.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp1.200.000 <span class="text-xs font-normal text-slate-500">/ set</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Event%20Desk%20Portable" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Event Desk Portable (1 Set)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- KATEGORI B: PRINT & CETAK KERTAS / DOKUMEN -->
-
-                <!-- Product Card 9 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="kertas" data-title="Undangan Nikahan Khitanan AP150gr">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-purple-50 text-purple-700 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Print Kertas</span>
-                            <span class="text-[9px] sm:text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Min. 100 pcs</span>
+                <!-- CATEGORY B: PRINT & CETAK KERTAS -->
+                <div class="catalog-item cat-kertas bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Cetak Kertas</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Min. 100 pcs</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Undangan Nikahan / Khitanan</h3>
-                        <p class="text-xs text-gray-500 mt-1">Kertas Artpaper 150gr, hasil cetak tajam & eksklusif.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp5.000 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Undangan Nikahan / Khitanan</h3>
+                        <p class="text-xs text-slate-500 mt-1">Bahan Artpaper 150gr cetak full color high quality.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp5.000 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Undangan%20Nikahan%20Khitanan" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Undangan Nikahan / Khitanan (AP150gr)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 10 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="kertas" data-title="Print Laser A3 Artpaper 150gr Dokumen Flyer Poster">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-purple-50 text-purple-700 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Print Kertas</span>
+                <div class="catalog-item cat-kertas bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Cetak Kertas</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Ukuran A3</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Print Laser A3 (AP 150gr)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Cetak dokumen, poster & brosur warna resolusi tinggi.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp17.000 <span class="text-xs font-normal text-gray-500">/ lbr</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Print Laser A3 (Artpaper 150gr)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Print tajam tahan air untuk poster, brosur, atau menu.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp17.000 <span class="text-xs font-normal text-slate-500">/ lbr</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Print%20Laser%20A3" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Print Laser A3 (Artpaper 150gr)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 11 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="kertas" data-title="Map Folder A4 Artpaper 260gr Dokumen Perusahaan">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-purple-50 text-purple-700 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Print Kertas</span>
-                            <span class="text-[9px] sm:text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Min. 50 pcs</span>
+                <div class="catalog-item cat-kertas bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Cetak Kertas</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Min. 50 pcs</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Map Folder A4 Custom</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Artpaper 260gr tebal untuk berkas kantor & usaha.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp17.000 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Map Folder A4 (Artpaper 260gr)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Map kantong dokumen kantor / berkas instansi.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp17.000 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Map%20Folder%20A4" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Map Folder A4 (Artpaper 260gr)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 12 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="kertas" data-title="Die Cut Artpaper A3 Bahan AP260 Potong Bentuk">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-purple-50 text-purple-700 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Print Kertas</span>
+                <div class="catalog-item cat-kertas bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Cetak Kertas</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Custom Cut</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Die Cut Artpaper A3</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan AP260gr lengkap dengan potong pola/bentuk kustom.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp35.500 <span class="text-xs font-normal text-gray-500">/ lbr</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Die Cut Artpaper A3 (Bahan AP260)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Cetak tebal AP260 plus potong pola khusus.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp35.500 <span class="text-xs font-normal text-slate-500">/ lbr</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Die%20Cut%20Artpaper%20A3" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Die Cut Artpaper A3 (Bahan AP260)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 13 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="kertas" data-title="Nota Kwitansi 1 Rangkap 40 buku">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-purple-50 text-purple-700 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Print Kertas</span>
-                            <span class="text-[9px] sm:text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Isi 40 Buku</span>
+                <div class="catalog-item cat-kertas bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Cetak Kertas</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Isi 40 Buku</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Nota / Kwitansi (1 Rangkap)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Cetak nota cetak 1 rim (dapat 40 buku nota/kwitansi).</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp264.500 <span class="text-xs font-normal text-gray-500">/ rim</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Nota / Kwitansi (1 Rangkap)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Cetak nota penjualan usahawan 1 rim isi 40 buku.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp264.500 <span class="text-xs font-normal text-slate-500">/ rim</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Nota%20Kwitansi" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Nota / Kwitansi (1 Rangkap)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- KATEGORI C: STIKER & CUTTING -->
-
-                <!-- Product Card 14 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="stiker" data-title="Die Cut Sticker A3 Bahan Chromo">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-cyan-50 text-cyan-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Stiker & Cut</span>
-                            <span class="bg-amber-100 text-amber-800 text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded">Best Seller</span>
+                <!-- CATEGORY C: STIKER & CUTTING -->
+                <div class="catalog-item cat-stiker bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Stiker & Cutting</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Lembar A3</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Die Cut Sticker A3</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Stiker Chromo mengkilap + potong putus Die Cut.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp28.500 <span class="text-xs font-normal text-gray-500">/ lbr</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Die Cut Sticker A3 (Chromo)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Stiker label produk kemasan siap tempel + potong bentuk.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp28.500 <span class="text-xs font-normal text-slate-500">/ lbr</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Die%20Cut%20Sticker%20A3" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Die Cut Sticker A3 (Chromo)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 15 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="stiker" data-title="Sticker Cutting Min area 60x10cm Vinil Oracal">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-cyan-50 text-cyan-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Stiker & Cut</span>
-                            <span class="text-[9px] sm:text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Min. 60x10cm</span>
+                <div class="catalog-item cat-stiker bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Stiker & Cutting</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">60x10cm</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Sticker Cutting Precision</h3>
-                        <p class="text-xs text-gray-500 mt-1">Cutting stiker presisi tinggi untuk kaca, kendaraan & produk.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp71.500 <span class="text-xs font-normal text-gray-500">/ order</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Sticker Cutting Vinyl</h3>
+                        <p class="text-xs text-slate-500 mt-1">Cutting stiker tulisan/logo untuk kaca, motor, atau mobil.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp71.500 <span class="text-xs font-normal text-slate-500">/ order</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Sticker%20Cutting" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Sticker Cutting Vinyl', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 16 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="stiker" data-title="Stiker Outdoor Stiker China Vinyl Tahan Cuaca">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-cyan-50 text-cyan-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Stiker & Cut</span>
+                <div class="catalog-item cat-stiker bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Stiker & Cutting</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Tahan Cuaca</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Stiker Outdoor (Stiker China)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Stiker vinyl anti air & cuaca untuk outdoor branding.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp121.500 <span class="text-xs font-normal text-gray-500">/ m</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Stiker Outdoor (Stiker China)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Stiker vinyl outdoor daya rekat kuat tahan hujan & panas.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp121.500 <span class="text-xs font-normal text-slate-500">/ m</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Stiker%20Outdoor" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Stiker Outdoor (Stiker China)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 17 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="stiker" data-title="Stiker DTF UV Anti Air A3 Doff Timbul Custom Mug Botol">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-cyan-50 text-cyan-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Stiker & Cut</span>
-                            <span class="bg-cyan-100 text-cyan-800 text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded">Premium DTF</span>
+                <div class="catalog-item cat-stiker bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Stiker & Cutting</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Premium DTF</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Stiker DTF UV Anti Air A3</h3>
-                        <p class="text-xs text-gray-500 mt-1">Hasil timbul Doff, super rekat & anti gores untuk souvenir/media keras.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp121.500 <span class="text-xs font-normal text-gray-500">/ lbr</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Stiker DTF UV Anti Air A3 (Doff)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Cetak stiker timbul tanpa background tahan gores & air.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp121.500 <span class="text-xs font-normal text-slate-500">/ lbr</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Stiker%20DTF%20UV%20Anti%20Air%20A3" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Stiker DTF UV Anti Air A3 (Doff)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- KATEGORI D: MERCHANDISE & SOUVENIR -->
-
-                <!-- Product Card 18 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="ID Card PVC Tebal min 12 25 pcs Cetak Kartu">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
-                            <span class="text-[9px] sm:text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Min. 12 pcs</span>
+                <!-- CATEGORY D: MERCHANDISE & SOUVENIR -->
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Min. 12 pcs</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">ID Card PVC Tebal</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan PVC tebal standar ATM, awet & cetak tajam 2 sisi.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp21.500 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">ID Card PVC (Bahan Tebal)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Kartu anggota / ID card karyawan cetak 2 sisi high-res.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp21.500 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20ID%20Card%20PVC" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('ID Card PVC (Bahan Tebal)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 19 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="Name Tag Akrilik Tanpa Resin Nama Dada Kantor">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Name Tag</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Name Tag Akrilik (Tanpa Resin)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Nama dada akrilik rapi, kokoh & profesional untuk staf.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp35.500 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Name Tag Akrilik (Tanpa Resin)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Dada peniti / magnet akrilik elegan untuk seragam kerja.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp35.500 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Name%20Tag%20Akrilik" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Name Tag Akrilik (Tanpa Resin)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 20 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="Lanyard Custom Grosir Pakai Stopper min 10 pcs Tali Gantungan">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
-                            <span class="text-[9px] sm:text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Grosir (Min. 10)</span>
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Min. 10 pcs</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Lanyard Custom Grosir</h3>
-                        <p class="text-xs text-gray-500 mt-1">Tali gantungan ID Card cetak full color + Stopper praktis.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp31.500 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Lanyard Custom Grosir (Stopper)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Tali id card cetak full color + stopper & kait besi.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp31.500 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Lanyard%20Custom%20Grosir" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Lanyard Custom Grosir (Stopper)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 21 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="Lanyard Custom Satuan Tanpa Stopper Tali ID Card">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
-                            <span class="bg-blue-100 text-blue-800 text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded">Satuan</span>
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Bisa Satuan</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Lanyard Custom Satuan</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bisa pesan tanpa minimal order, cetak fullcolor tanpa stopper.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp43.000 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Lanyard Custom Satuan</h3>
+                        <p class="text-xs text-slate-500 mt-1">Cetak tali id card custom tanpa minimum order.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp43.000 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Lanyard%20Custom%20Satuan" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Lanyard Custom Satuan', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 22 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="Kalender Duduk A5 AP260gr min 12 pcs Calendar Meja">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
-                            <span class="text-[9px] sm:text-[10px] text-gray-500 bg-gray-100 px-2 py-0.5 rounded">Min. 12 pcs</span>
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Min. 12 pcs</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Kalender Duduk A5</h3>
-                        <p class="text-xs text-gray-500 mt-1">Bahan Artpaper 260gr tebal + jilid spiral & dudukan keras.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp43.000 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Kalender Duduk A5 (AP260)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Kalender meja custom foto/logo bisnis bahan tebal.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp43.000 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Kalender%20Duduk%20A5" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Kalender Duduk A5 (AP260)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 23 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="Tote Bag Custom Gambar A5 Tas Kain Canvas">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Sablon A5</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Tote Bag Custom (Area A5)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Tas kain tote bag berkualitas dengan sablon/cetak gambar A5.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp64.500 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Tote Bag Custom Gambar</h3>
+                        <p class="text-xs text-slate-500 mt-1">Tas blacu / kain kanvas cetak gambar custom menarik.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp64.500 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Tote%20Bag%20Custom" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Tote Bag Custom Gambar', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 24 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="Tumbler Termos UV Model Niagara Botol Minum Souvenir Custom">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
-                            <span class="bg-amber-100 text-amber-800 text-[9px] sm:text-[10px] font-bold px-2 py-0.5 rounded">Souvenir Mewah</span>
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">Cetak UV</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Tumbler Termos UV (Niagara)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Termos Stenlis tahan panas/dingin + cetak UV nama/logo custom.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp135.500 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Tumbler Termos UV (Niagara)</h3>
+                        <p class="text-xs text-slate-500 mt-1">Botol minum termos stainless cetak UV full color anti pudar.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp135.500 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Tumbler%20Termos%20UV" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Tumbler Termos UV (Niagara)', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
-                <!-- Product Card 25 -->
-                <div class="product-card bg-white rounded-2xl border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group" data-category="merchandise" data-title="Plakat Akrilik Custom 9x14 cm Penghargaan Kenang-kenangan">
-                    <div class="p-5 sm:p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-emerald-50 text-emerald-800 font-bold text-[10px] sm:text-[11px] px-2.5 py-1 rounded-md uppercase">Merchandise</span>
+                <div class="catalog-item cat-merchandise bg-white rounded-2xl border border-slate-200 p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between gap-2 mb-2">
+                            <span class="text-[10px] font-bold uppercase tracking-wider text-purple-700 bg-purple-50 px-2.5 py-1 rounded-md">Merchandise</span>
+                            <span class="text-[10px] text-slate-400 font-semibold">9x14 cm</span>
                         </div>
-                        <h3 class="font-bold text-gray-900 text-base sm:text-lg group-hover:text-navy transition line-clamp-2">Plakat Akrilik Custom (9x14 cm)</h3>
-                        <p class="text-xs text-gray-500 mt-1">Plakat kenang-kenangan / penghargaan akrilik bening tebal.</p>
-                        <div class="mt-4 pt-3 border-t border-gray-100">
-                            <span class="text-[10px] sm:text-xs text-gray-400 block">Harga Jual:</span>
-                            <span class="text-xl sm:text-2xl font-extrabold text-navy">Rp150.000 <span class="text-xs font-normal text-gray-500">/ pcs</span></span>
+                        <h3 class="font-extrabold text-navy text-base">Plakat Akrilik Custom</h3>
+                        <p class="text-xs text-slate-500 mt-1">Plakat kenang-kenangan / penghargaan akrilik elegan.</p>
+                        <div class="mt-4 mb-4">
+                            <span class="text-xs text-slate-400 block">Harga Jual:</span>
+                            <span class="text-lg font-black text-navy">Rp150.000 <span class="text-xs font-normal text-slate-500">/ pcs</span></span>
                         </div>
                     </div>
-                    <div class="p-3.5 sm:p-4 bg-gray-50 border-t border-gray-100">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20order%20Plakat%20Akrilik%20Custom" 
-                           target="_blank" 
-                           class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-4 rounded-xl text-xs flex items-center justify-center gap-2 shadow-sm transition">
-                            <i class="fa-brands fa-whatsapp text-sm"></i>
-                            <span>Pesan via WhatsApp</span>
-                        </a>
-                    </div>
+                    <button onclick="openOrderModal('Plakat Akrilik Custom', 'general')" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-2.5 px-3 rounded-xl text-xs transition shadow-sm flex items-center justify-center gap-2">
+                        <span>Order Sekarang</span>
+                    </button>
                 </div>
 
             </div>
-
-            <!-- Empty Search Results Message -->
-            <div id="no-results" class="hidden text-center py-10 sm:py-12 bg-white rounded-2xl border border-dashed border-gray-300 mt-6 px-4">
-                <i class="fa-solid fa-box-open text-3xl sm:text-4xl text-gray-300 mb-3 block"></i>
-                <h4 class="font-bold text-gray-700 text-base sm:text-lg">Produk Tidak Ditemukan</h4>
-                <p class="text-xs text-gray-500 mt-1 max-w-md mx-auto">Coba kata kunci lain atau konsultasikan cetak custom ke customer service kami via WhatsApp.</p>
-                <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20tanya%20produk%20cetak%20lainnya" 
-                   target="_blank" 
-                   class="inline-flex items-center gap-2 mt-4 bg-navy text-white px-5 py-2.5 rounded-xl font-bold text-xs hover:bg-navy-dark transition">
-                    <i class="fa-brands fa-whatsapp"></i> Tanya Produk Custom via WA
-                </a>
-            </div>
-
         </div>
     </section>
 
-    <!-- SECTION 5: LOKASI & ALAMAT TOKO -->
-    <section id="lokasi" class="py-12 sm:py-16 bg-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-2xl mx-auto mb-8 sm:mb-12">
-                <span class="text-navy font-bold text-xs sm:text-sm uppercase tracking-wider bg-navy-soft px-3 py-1 rounded-full">Kunjungi Workshop Kami</span>
-                <h2 class="text-2xl sm:text-4xl font-extrabold text-navy mt-2">Lokasi & Kontak Toko</h2>
-                <p class="text-xs sm:text-sm text-gray-600 mt-1">Anda dapat berkunjung langsung ke workshop kami atau memesan secara online dari rumah.</p>
-            </div>
+    <!-- SEKSI LOKASI & INFORMASI PEMESANAN ONLINE -->
+    <section id="lokasi" class="py-12 sm:py-16 bg-white border-t border-slate-200">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            
+            <span class="text-xs font-bold text-cyan-700 uppercase tracking-widest bg-cyan-50 px-3.5 py-1.5 rounded-full border border-cyan-100">
+                Kazayn Store Percetakan
+            </span>
+            
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-navy mt-3">
+                Melayani Pemesanan Online ke Seluruh Indonesia
+            </h2>
+            
+            <p class="text-slate-600 text-xs sm:text-base mt-3 leading-relaxed max-w-2xl mx-auto">
+                Kami fokus melayani pemesanan secara online agar proses lebih praktis, cepat, dan efisien. Tim kami siap membantu Anda melalui WhatsApp.
+            </p>
 
-            <div class="grid lg:grid-cols-12 gap-6 sm:gap-8 items-start">
-                
-                <!-- Address Details Card -->
-                <div class="lg:col-span-5 bg-slate-50 p-5 sm:p-8 rounded-2xl sm:rounded-3xl border border-gray-200 shadow-sm space-y-5 sm:space-y-6">
-                    
+            <div class="mt-8 bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm space-y-4 max-w-xl mx-auto text-left">
+                <div class="flex items-start gap-3.5">
+                    <div class="w-10 h-10 rounded-xl bg-navy text-cyan-300 flex items-center justify-center text-lg shrink-0 mt-0.5">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
                     <div>
-                        <span class="text-[10px] sm:text-xs font-bold text-cyan-600 uppercase tracking-wider">Alamat Lengkap</span>
-                        <h3 class="text-lg sm:text-xl font-extrabold text-navy mt-1">Kazayn Store Percetakan</h3>
-                        <p class="text-xs sm:text-sm text-gray-700 mt-2 leading-relaxed flex items-start gap-2.5 sm:gap-3">
-                            <i class="fa-solid fa-location-dot text-red-500 text-base sm:text-lg shrink-0 mt-0.5"></i>
-                            <span>Jalan Rancabolang No. 111, Rt.03/Rw.04, Sekejati, Buahbatu (Margacinta) 40286.</span>
+                        <h4 class="font-extrabold text-navy text-sm">Alamat Lengkap Workshop</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
+                            Jalan Rancabolang No. 111, Rt.03/Rw.04, Sekejati, Buahbatu (Margacinta) 40286.
                         </p>
                     </div>
-
-                    <hr class="border-gray-200">
-
-                    <!-- Store Info Grid -->
-                    <div class="space-y-3.5 sm:space-y-4">
-                        <div class="flex items-center gap-3">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center font-bold shrink-0">
-                                <i class="fa-brands fa-whatsapp text-base sm:text-lg"></i>
-                            </div>
-                            <div>
-                                <span class="text-[10px] sm:text-xs text-gray-500 block">WhatsApp Resmi / Telepon:</span>
-                                <a href="https://wa.me/6285179756031" target="_blank" class="font-bold text-gray-800 hover:text-emerald-600 transition text-xs sm:text-sm">0851-7975-6031</a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-3">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-100 text-navy flex items-center justify-center font-bold shrink-0">
-                                <i class="fa-solid fa-clock text-base sm:text-lg"></i>
-                            </div>
-                            <div>
-                                <span class="text-[10px] sm:text-xs text-gray-500 block">Jam Operasional Workshop:</span>
-                                <span class="font-bold text-gray-800 text-xs sm:text-sm">Senin - Sabtu: 08.00 - 20.00 WIB</span>
-                            </div>
-                        </div>
-
-                        <div class="flex items-center gap-3">
-                            <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center font-bold shrink-0">
-                                <i class="fa-solid fa-truck-fast text-base sm:text-lg"></i>
-                            </div>
-                            <div>
-                                <span class="text-[10px] sm:text-xs text-gray-500 block">Layanan Pengiriman:</span>
-                                <span class="font-bold text-gray-800 text-xs sm:text-sm">Ojek Online, Cargo & COD Wilayah Terjangkau</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="pt-1">
-                        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20menanyakan%20rute%20ke%20lokasi%20toko" 
-                           target="_blank" 
-                           class="w-full bg-navy hover:bg-navy-dark text-white font-bold py-3 sm:py-3.5 px-5 rounded-xl text-xs flex items-center justify-center gap-2 shadow transition">
-                            <i class="fa-solid fa-map-location-dot"></i>
-                            <span>Petunjuk Rute / Tanya Lokasi WA</span>
-                        </a>
-                    </div>
-
                 </div>
 
-                <!-- Google Maps Embed Container -->
-                <div class="lg:col-span-7 bg-gray-100 rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm border border-gray-200 h-[300px] sm:h-[400px] lg:h-[480px] relative">
-                    <iframe 
-                        title="Peta Lokasi Kazayn Store Percetakan"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.612848906981!2d107.65345000000001!3d-6.93677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e819b1834241%3A0xa193d1fef673103e!2sJl.%20Rancabolang%20No.111%2C%20Sekejati%2C%20Kec.%20Buahbatu%2C%20Kota%20Bandung%2C%20Jawa%20Barat%2040286!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
-                        class="w-full h-full border-0" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div class="flex items-start gap-3.5 pt-3 border-t border-slate-200">
+                    <div class="w-10 h-10 rounded-xl bg-waGreen/10 text-waGreen flex items-center justify-center text-lg shrink-0 mt-0.5">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-extrabold text-navy text-sm">WhatsApp Resmi Transaksi</h4>
+                        <p class="text-xs sm:text-sm text-slate-600 mt-1 font-semibold">
+                            0851-7975-6031
+                        </p>
+                    </div>
                 </div>
-
             </div>
+
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-navy-dark text-white pt-10 sm:pt-12 pb-6 sm:pb-8 border-t border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-8 pb-8 border-b border-white/10">
-                
-                <!-- Col 1: Brand Info -->
-                <div class="sm:col-span-2 space-y-3.5">
-                    <div class="flex items-center space-x-3">
-                        <div class="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-cyanAccent text-base font-black shrink-0">
-                            <i class="fa-solid fa-print"></i>
-                        </div>
-                        <span class="text-base sm:text-lg font-black text-white tracking-tight">KAZAYN STORE PERCETAKAN</span>
-                    </div>
-                    <p class="text-xs text-slate-300 leading-relaxed max-w-sm">
-                        Partner terpercaya digital printing & percetakan custom. Menyediakan spanduk, banner, stiker, cetak kertas dokumen hingga souvenir promosi berkualitas tinggi.
-                    </p>
-                    <div class="flex items-center space-x-3 pt-1">
-                        <a href="https://wa.me/6285179756031" target="_blank" aria-label="WhatsApp" class="w-8 h-8 rounded-full bg-white/10 hover:bg-waGreen text-white flex items-center justify-center text-xs transition">
-                            <i class="fa-brands fa-whatsapp"></i>
-                        </a>
-                        <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" aria-label="Facebook" class="w-8 h-8 rounded-full bg-white/10 hover:bg-blue-600 text-white flex items-center justify-center text-xs transition">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="#lokasi" aria-label="Lokasi Toko" class="w-8 h-8 rounded-full bg-white/10 hover:bg-cyanAccent text-white flex items-center justify-center text-xs transition">
-                            <i class="fa-solid fa-location-dot"></i>
-                        </a>
-                    </div>
+    <footer class="bg-navy text-slate-300 py-10 border-t border-navy-light/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+            <div class="flex justify-center items-center gap-2">
+                <div class="w-8 h-8 bg-cyan-500 rounded-lg flex items-center justify-center text-navy font-bold text-sm">
+                    <i class="fa-solid fa-print text-sm"></i>
                 </div>
+                <span class="font-extrabold text-lg text-white">Kazayn Store Percetakan</span>
+            </div>
+            
+            <p class="text-xs text-slate-400 max-w-md mx-auto">
+                Spesialis Cetak Spanduk, Banner, Stiker, Undangan, & Merchandise Custom Grosir Maupun Satuan.
+            </p>
 
-                <!-- Col 2: Quick Links -->
-                <div>
-                    <h4 class="text-xs sm:text-sm font-bold text-cyan-300 uppercase tracking-wider mb-3">Navigasi Cepat</h4>
-                    <ul class="space-y-2 text-xs text-slate-300">
-                        <li><a href="#beranda" class="hover:text-white transition">Beranda Utama</a></li>
-                        <li><a href="#jasa-desain" class="hover:text-white transition">Jasa Desain Promo</a></li>
-                        <li><a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" class="hover:text-white transition flex items-center gap-1"><span>Katalog Facebook</span> <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i></a></li>
-                        <li><a href="#kalkulator" class="hover:text-white transition">Kalkulator Spanduk</a></li>
-                        <li><a href="#lokasi" class="hover:text-white transition">Alamat & Maps Toko</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Special Services -->
-                <div>
-                    <h4 class="text-xs sm:text-sm font-bold text-cyan-300 uppercase tracking-wider mb-3">Layanan Spesial</h4>
-                    <ul class="space-y-2 text-xs text-slate-300">
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Cetak Satuan & Grosir</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> BISA COD Spanduk</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Promo Desain Rp30.000</li>
-                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-400"></i> Pengiriman Ekspres</li>
-                    </ul>
-                </div>
-
+            <div class="flex justify-center gap-4 text-xs font-medium text-slate-300 pt-2">
+                <a href="#beranda" class="hover:text-cyan-400 transition">Beranda</a>
+                <span>•</span>
+                <a href="#desain" class="hover:text-cyan-400 transition">Jasa Desain</a>
+                <span>•</span>
+                <a href="https://web.facebook.com/profile.php?id=61590528173429" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition">Katalog Facebook</a>
+                <span>•</span>
+                <a href="#katalog" class="hover:text-cyan-400 transition">Daftar Harga</a>
             </div>
 
-            <!-- Bottom Copyright Bar -->
-            <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-[11px] sm:text-xs text-slate-400 text-center sm:text-left">
-                <p>© <span id="year"></span> Kazayn Store Percetakan. All Rights Reserved.</p>
-                <p>Designed for Kazayn Store Digital Printing</p>
-            </div>
+            <p class="text-[11px] text-slate-500 pt-4 border-t border-slate-800">
+                © Kazayn Store Percetakan. All Rights Reserved.
+            </p>
         </div>
     </footer>
 
-    <!-- FLOATING WHATSAPP BUTTON WIDGET -->
-    <div class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 flex items-center gap-3">
-        <!-- Floating Tooltip Box -->
-        <div class="hidden md:flex bg-white text-navy font-bold text-xs px-3.5 py-2 rounded-xl shadow-xl border border-gray-100 items-center gap-2 animate-bounce">
-            <span>Ada Pertanyaan? Chat CS Kami</span>
-            <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
-        </div>
+    <!-- FLOATING WA BUTTON -->
+    <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20tanya%20produk%20cetak" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp" class="fixed bottom-5 right-5 z-50 bg-waGreen hover:bg-waGreenHover text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition hover:scale-110 active:scale-95 group">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-slate-900 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl shadow-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">
+            Chat CS Fast Response
+        </span>
+    </a>
 
-        <!-- Floating WA Icon Circle Button -->
-        <a href="https://wa.me/6285179756031?text=Halo%20Kazayn%20Store,%20saya%20ingin%20konsultasi%20order%20cetak" 
-           target="_blank" 
-           aria-label="Chat WhatsApp Kazayn Store"
-           class="w-12 h-12 sm:w-14 sm:h-14 bg-waGreen hover:bg-waGreenHover text-white rounded-full flex items-center justify-center text-2xl sm:text-3xl shadow-2xl pulse-animation hover:scale-110 transition duration-300 relative group">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span class="absolute -top-1 -right-1 w-4 h-4 bg-red-500 text-white text-[9px] font-black rounded-full flex items-center justify-center border-2 border-white">1</span>
-        </a>
+    <!-- ORDER FORM MODAL POPUP -->
+    <div id="order-modal" class="fixed inset-0 z-50 bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-white rounded-2xl max-w-lg w-full p-5 sm:p-6 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+            
+            <!-- Close Modal Button -->
+            <button onclick="closeOrderModal()" aria-label="Tutup Form Modal" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 text-xl font-bold p-1">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <div class="border-b border-slate-100 pb-3 mb-4">
+                <h3 class="font-extrabold text-navy text-lg">Formulir Pemesanan Cetak</h3>
+                <p class="text-xs text-slate-500">Lengkapi detail pemesanan di bawah ini untuk konfirmasi via WhatsApp.</p>
+            </div>
+
+            <form onsubmit="submitOrderToWA(event)" class="space-y-3.5">
+                
+                <div>
+                    <label for="modal-nama" class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Nama Pemesan <span class="text-red-500">*</span></label>
+                    <input type="text" id="modal-nama" required placeholder="Masukkan nama Anda" class="w-full px-3.5 py-2.5 bg-slate-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:bg-white">
+                </div>
+
+                <div>
+                    <label for="modal-alamat" class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Alamat Lengkap Pengiriman <span class="text-red-500">*</span></label>
+                    <textarea id="modal-alamat" required rows="2" placeholder="Nama jalan, nomor rumah, RT/RW, kecamatan, kota/kabupaten" class="w-full px-3.5 py-2.5 bg-slate-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:bg-white"></textarea>
+                </div>
+
+                <div>
+                    <label for="modal-produk" class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Produk Dipesan</label>
+                    <input type="text" id="modal-produk" readonly class="w-full px-3.5 py-2.5 bg-slate-100 border border-gray-200 rounded-xl text-xs sm:text-sm font-semibold text-navy cursor-not-allowed">
+                </div>
+
+                <!-- PILIHAN LAYANAN: CETAK SAJA / PROMO JASA DESAIN + CETAK -->
+                <div id="modal-opsi-layanan-container">
+                    <label class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                        Pilihan Layanan <span class="text-red-500">*</span>
+                    </label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                        <label class="flex items-center gap-2.5 p-3 rounded-xl border border-gray-200 bg-slate-50 hover:bg-white cursor-pointer transition">
+                            <input type="radio" name="opsi_layanan" value="Cetak Saja (Sudah Ada Desain)" checked onchange="handleOpsiLayananChange()" class="w-4 h-4 text-navy focus:ring-navy">
+                            <div class="text-xs">
+                                <span class="font-bold text-slate-800 block">Cetak Saja</span>
+                                <span class="text-[10px] text-slate-500">File desain siap cetak</span>
+                            </div>
+                        </label>
+                        <label class="flex items-center gap-2.5 p-3 rounded-xl border border-amber-300 bg-amber-50/50 hover:bg-amber-50 cursor-pointer transition">
+                            <input type="radio" name="opsi_layanan" value="Promo Jasa Desain + Cetak (+Rp30.000)" onchange="handleOpsiLayananChange()" class="w-4 h-4 text-amber-600 focus:ring-amber-500">
+                            <div class="text-xs">
+                                <span class="font-bold text-amber-900 block">Promo Jasa Desain + Cetak</span>
+                                <span class="text-[10px] text-amber-700 font-semibold">+ Jasa Desain Rp30.000</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- DYNAMIC JASA DESAIN ONLY SECTION -->
+                <div id="modal-desain-only-container" class="hidden space-y-3.5">
+                    <div>
+                        <label class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
+                            Pilihan Kategori Desain <span class="text-red-500">*</span>
+                        </label>
+                        <div class="space-y-2">
+                            <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-amber-300 bg-amber-50/60 hover:bg-amber-50 cursor-pointer transition">
+                                <input type="radio" name="paket_desain" value="Desain Besar / Kesulitan Tinggi (Rp100.000)" checked class="mt-0.5 w-4 h-4 text-amber-600 focus:ring-amber-500">
+                                <div class="text-xs">
+                                    <span class="font-bold text-amber-950 block">Desain Besar / Kesulitan Tinggi — Rp100.000</span>
+                                    <span class="text-[10px] text-slate-600">Spanduk, banner, spanduk kain, X-banner, roll up, booth, dll.</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-gray-200 bg-slate-50 hover:bg-white cursor-pointer transition">
+                                <input type="radio" name="paket_desain" value="Desain Produk & Branding (Rp50.000)" class="mt-0.5 w-4 h-4 text-amber-600 focus:ring-amber-500">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">Desain Produk & Branding — Rp50.000</span>
+                                    <span class="text-[10px] text-slate-600">Logo, menu makanan, stiker, undangan pernikahan, totebag, botol minuman, dll.</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-gray-200 bg-slate-50 hover:bg-white cursor-pointer transition">
+                                <input type="radio" name="paket_desain" value="Desain Medsos & Promosi (Rp35.000)" class="mt-0.5 w-4 h-4 text-amber-600 focus:ring-amber-500">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">Desain Medsos & Promosi — Rp35.000</span>
+                                    <span class="text-[10px] text-slate-600">Feed Instagram, Facebook, banner promosi medsos, dll.</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="modal-jenis-desain" class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">
+                            Mau Bikin Desain Apa? <span class="text-red-500">*</span>
+                        </label>
+                        <input type="text" id="modal-jenis-desain" placeholder="Contoh: Desain Banner Nasi Goreng, Logo Olshop, Feed IG, dll." class="w-full px-3.5 py-2.5 bg-slate-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:bg-white">
+                    </div>
+
+                    <div class="p-3 bg-amber-50 border border-amber-300 rounded-xl">
+                        <label class="flex items-start gap-2.5 cursor-pointer">
+                            <input type="checkbox" id="modal-desain-komitmen" class="mt-0.5 w-4 h-4 text-amber-600 rounded focus:ring-amber-500 shrink-0">
+                            <span class="text-xs text-amber-950 font-semibold leading-snug">
+                                Saya pasti Membayar Jasa desainya Jika desain Sudah selesai dibuat oleh tim Kazayn Store <span class="text-red-500">*</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- DYNAMIC SPANDUK CALCULATOR SECTION -->
+                <div id="modal-calc-banner" class="hidden p-3.5 bg-cyan-50 rounded-xl border border-cyan-200 space-y-2.5">
+                    <p class="text-xs font-bold text-navy flex items-center gap-1.5">
+                        <i class="fa-solid fa-calculator text-cyan-600"></i> Hitung Otomatis Ukuran Spanduk
+                    </p>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div>
+                            <label for="calc-panjang" class="block text-[10px] font-bold text-slate-600">Panjang (m)</label>
+                            <input type="number" id="calc-panjang" step="0.1" min="0.5" value="3" oninput="updateBannerPrice()" class="w-full px-2.5 py-2 bg-white border border-gray-300 rounded-lg text-xs font-semibold text-slate-800">
+                        </div>
+                        <div>
+                            <label for="calc-lebar" class="block text-[10px] font-bold text-slate-600">Lebar (m)</label>
+                            <input type="number" id="calc-lebar" step="0.1" min="0.5" value="1" oninput="updateBannerPrice()" class="w-full px-2.5 py-2 bg-white border border-gray-300 rounded-lg text-xs font-semibold text-slate-800">
+                        </div>
+                        <div>
+                            <label for="calc-jumlah" class="block text-[10px] font-bold text-slate-600">Jumlah (pcs)</label>
+                            <input type="number" id="calc-jumlah" min="1" value="1" oninput="updateBannerPrice()" class="w-full px-2.5 py-2 bg-white border border-gray-300 rounded-lg text-xs font-semibold text-slate-800">
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-1 border-t border-cyan-200/60 text-xs">
+                        <span class="text-slate-600">Total Luas: <strong id="calc-luas" class="text-navy">3.0 m²</strong></span>
+                        <span class="text-slate-600">Estimasi Harga: <strong id="calc-total" class="text-navy font-extrabold text-sm">Rp150.000</strong></span>
+                    </div>
+                </div>
+
+                <!-- GENERAL QUANTITY FIELD -->
+                <div id="modal-general-qty">
+                    <label for="modal-ukuran-jumlah" class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Jumlah / Ukuran <span class="text-red-500">*</span></label>
+                    <input type="text" id="modal-ukuran-jumlah" placeholder="Contoh: 50 pcs / 1 set" class="w-full px-3.5 py-2.5 bg-slate-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:bg-white">
+                </div>
+
+                <div>
+                    <label for="modal-catatan" class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Detail / Catatan Pesanan</label>
+                    <textarea id="modal-catatan" rows="2" placeholder="Tuliskan warna dominan, teks cetak, finishing, atau instruksi khusus lainnya..." class="w-full px-3.5 py-2.5 bg-slate-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:bg-white"></textarea>
+                </div>
+
+                <div class="pt-2">
+                    <button type="submit" class="w-full bg-waGreen hover:bg-waGreenHover text-white font-bold py-3 px-4 rounded-xl text-xs sm:text-sm shadow-md transition flex items-center justify-center">
+                        <span>Konfirmasi Pesanan via WhatsApp</span>
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
 
-    <!-- JAVASCRIPT LOGIC -->
+    <!-- JAVASCRIPT APPLICATION LOGIC -->
     <script>
-        // Multi-Source Image Fallback for Google Drive
         const GDRIVE_FILE_ID = '1JJLu9CzwQpmHGb16JtbTy6ZODjf5U_b0';
         const HERO_SOURCES = [
-            `https://lh3.googleusercontent.com/d/${GDRIVE_FILE_ID}`,
-            `https://wsrv.nl/?url=https://drive.google.com/uc?id=${GDRIVE_FILE_ID}`,
-            `https://lh3.googleusercontent.com/d/${GDRIVE_FILE_ID}=s1600`,
-            `https://drive.google.com/thumbnail?id=${GDRIVE_FILE_ID}&sz=w1920`,
+            'https://lh3.googleusercontent.com/d/' + GDRIVE_FILE_ID,
+            'https://wsrv.nl/?url=https://drive.google.com/uc?id=' + GDRIVE_FILE_ID,
+            'https://drive.google.com/thumbnail?id=' + GDRIVE_FILE_ID + '&sz=w1920',
             'https://images.unsplash.com/photo-1562654501-a0ccc0fc3fb1?auto=format&fit=crop&w=1920&q=80'
         ];
         let heroSrcIndex = 0;
@@ -1335,116 +1120,209 @@
             }
         }
 
-        document.addEventListener('DOMContentLoaded', () => {
-            // Set dynamic copyright year
-            document.getElementById('year').textContent = new Date().getFullYear();
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-            // 1. Mobile Menu Toggle
-            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
-
+        if (mobileMenuBtn && mobileMenu) {
             mobileMenuBtn.addEventListener('click', () => {
                 mobileMenu.classList.toggle('hidden');
             });
 
-            mobileNavLinks.forEach(link => {
+            document.querySelectorAll('.mobile-nav-link').forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.add('hidden');
                 });
             });
+        }
 
-            // 2. Interactive Product Category Filtering & Search
-            const filterTabs = document.querySelectorAll('.filter-tab');
-            const productCards = document.querySelectorAll('.product-card');
-            const searchInput = document.getElementById('search-input');
-            const noResults = document.getElementById('no-results');
+        function filterCatalog(category) {
+            const items = document.querySelectorAll('.catalog-item');
+            const tabs = document.querySelectorAll('.catalog-tab');
 
-            let currentCategory = 'all';
-            let currentSearchTerm = '';
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-navy', 'text-white');
+                tab.classList.add('bg-white', 'text-slate-700');
+            });
 
-            function updateCatalogDisplay() {
-                let visibleCount = 0;
+            if (event && event.target) {
+                event.target.classList.remove('bg-white', 'text-slate-700');
+                event.target.classList.add('bg-navy', 'text-white');
+            }
 
-                productCards.forEach(card => {
-                    const cardCategory = card.getAttribute('data-category');
-                    const cardTitle = card.getAttribute('data-title').toLowerCase();
-
-                    const matchesCategory = (currentCategory === 'all' || cardCategory === currentCategory);
-                    const matchesSearch = cardTitle.includes(currentSearchTerm);
-
-                    if (matchesCategory && matchesSearch) {
-                        card.classList.remove('hidden');
-                        visibleCount++;
-                    } else {
-                        card.classList.add('hidden');
-                    }
-                });
-
-                if (visibleCount === 0) {
-                    noResults.classList.remove('hidden');
+            items.forEach(item => {
+                if (category === 'all') {
+                    item.classList.remove('hidden');
                 } else {
-                    noResults.classList.add('hidden');
+                    if (item.classList.contains('cat-' + category)) {
+                        item.classList.remove('hidden');
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                }
+            });
+        }
+
+        let currentProductType = 'general';
+        let currentUnitPrice = 50000;
+
+        function openOrderModal(productTitle, productType) {
+            currentProductType = productType || 'general';
+            document.getElementById('modal-produk').value = productTitle;
+            
+            const calcBanner = document.getElementById('modal-calc-banner');
+            const generalQty = document.getElementById('modal-general-qty');
+            const generalQtyInput = document.getElementById('modal-ukuran-jumlah');
+            const opsiContainer = document.getElementById('modal-opsi-layanan-container');
+            const desainOnlyContainer = document.getElementById('modal-desain-only-container');
+            const desainKomitmenInput = document.getElementById('modal-desain-komitmen');
+            const jenisDesainInput = document.getElementById('modal-jenis-desain');
+
+            if (currentProductType === 'desain-saja') {
+                calcBanner.classList.add('hidden');
+                generalQty.classList.add('hidden');
+                generalQtyInput.removeAttribute('required');
+                if (opsiContainer) opsiContainer.classList.add('hidden');
+                
+                if (desainOnlyContainer) desainOnlyContainer.classList.remove('hidden');
+                if (desainKomitmenInput) desainKomitmenInput.setAttribute('required', 'true');
+                if (jenisDesainInput) jenisDesainInput.setAttribute('required', 'true');
+            } else {
+                if (desainOnlyContainer) desainOnlyContainer.classList.add('hidden');
+                if (desainKomitmenInput) {
+                    desainKomitmenInput.removeAttribute('required');
+                    desainKomitmenInput.checked = false;
+                }
+                if (jenisDesainInput) {
+                    jenisDesainInput.removeAttribute('required');
+                    jenisDesainInput.value = '';
+                }
+
+                if (opsiContainer) opsiContainer.classList.remove('hidden');
+                
+                // Reset ke pilihan default "Cetak Saja"
+                const defaultRadio = document.querySelector('input[name="opsi_layanan"][value*="Cetak Saja"]');
+                if (defaultRadio) defaultRadio.checked = true;
+
+                if (currentProductType === 'spanduk-flexy' || currentProductType === 'spanduk-kain') {
+                    calcBanner.classList.remove('hidden');
+                    generalQty.classList.add('hidden');
+                    generalQtyInput.removeAttribute('required');
+
+                    if (currentProductType === 'spanduk-flexy') {
+                        currentUnitPrice = 50000;
+                    } else if (currentProductType === 'spanduk-kain') {
+                        currentUnitPrice = 70000;
+                    }
+                    updateBannerPrice();
+                } else {
+                    calcBanner.classList.add('hidden');
+                    generalQty.classList.remove('hidden');
+                    generalQtyInput.setAttribute('required', 'true');
                 }
             }
 
-            // Tab Click Event
-            filterTabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    filterTabs.forEach(t => {
-                        t.classList.remove('bg-navy', 'text-white', 'active');
-                        t.classList.add('bg-white', 'text-gray-700');
-                    });
+            document.getElementById('order-modal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
 
-                    tab.classList.remove('bg-white', 'text-gray-700');
-                    tab.classList.add('bg-navy', 'text-white', 'active');
+        function closeOrderModal() {
+            document.getElementById('order-modal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
 
-                    currentCategory = tab.getAttribute('data-category');
-                    updateCatalogDisplay();
-                });
-            });
+        function handleOpsiLayananChange() {
+            if (currentProductType === 'spanduk-flexy' || currentProductType === 'spanduk-kain') {
+                updateBannerPrice();
+            }
+        }
 
-            // Live Search Input Event
-            searchInput.addEventListener('input', (e) => {
-                currentSearchTerm = e.target.value.toLowerCase().trim();
-                updateCatalogDisplay();
-            });
+        function updateBannerPrice() {
+            const p = parseFloat(document.getElementById('calc-panjang').value) || 0;
+            const l = parseFloat(document.getElementById('calc-lebar').value) || 0;
+            const qty = parseInt(document.getElementById('calc-jumlah').value) || 1;
 
-            // 3. Spanduk Estimator Calculator Logic
-            const calcWidth = document.getElementById('calc-width');
-            const calcHeight = document.getElementById('calc-height');
-            const calcQty = document.getElementById('calc-qty');
-            const calcTotalArea = document.getElementById('calc-total-area');
-            const calcTotalPrice = document.getElementById('calc-total-price');
-            const calcWaBtn = document.getElementById('calc-wa-btn');
+            const luasPerPcs = p * l;
+            const totalLuas = luasPerPcs * qty;
+            let totalPrice = totalLuas * currentUnitPrice;
 
-            const PRICE_PER_M2 = 50000;
-
-            function calculateSpandukPrice() {
-                const w = parseFloat(calcWidth.value) || 0;
-                const h = parseFloat(calcHeight.value) || 0;
-                const qty = parseInt(calcQty.value) || 1;
-
-                const areaPerPcs = w * h;
-                const totalArea = areaPerPcs * qty;
-                const totalPrice = Math.max(totalArea * PRICE_PER_M2, 50000); // minimal Rp50k
-
-                calcTotalArea.textContent = `${totalArea.toFixed(1)} m² (${qty} Pcs @ ${w}x${h}m)`;
-                calcTotalPrice.textContent = `Rp ${totalPrice.toLocaleString('id-ID')}`;
-
-                const textMessage = encodeURIComponent(
-                    `Halo Kazayn Store, saya ingin order Spanduk Banner Flexy Printing dengan ukuran ${w}m x ${h}m sejumlah ${qty} pcs. Total estimasi: Rp ${totalPrice.toLocaleString('id-ID')}`
-                );
-                calcWaBtn.href = `https://wa.me/6285179756031?text=${textMessage}`;
+            const opsiRadio = document.querySelector('input[name="opsi_layanan"]:checked');
+            const isPromoDesain = opsiRadio && opsiRadio.value.includes('Promo Jasa Desain');
+            if (isPromoDesain) {
+                totalPrice += 30000;
             }
 
-            calcWidth.addEventListener('input', calculateSpandukPrice);
-            calcHeight.addEventListener('input', calculateSpandukPrice);
-            calcQty.addEventListener('input', calculateSpandukPrice);
+            document.getElementById('calc-luas').textContent = totalLuas.toFixed(1) + ' m²';
+            document.getElementById('calc-total').textContent = 'Rp' + totalPrice.toLocaleString('id-ID') + (isPromoDesain ? ' (Termasuk Desain Rp30rb)' : '');
+        }
 
-            // Initialize calculator once
-            calculateSpandukPrice();
-        });
+        function submitOrderToWA(e) {
+            e.preventDefault();
+            const nama = document.getElementById('modal-nama').value.trim();
+            const alamat = document.getElementById('modal-alamat').value.trim();
+            const produk = document.getElementById('modal-produk').value.trim();
+            const catatan = document.getElementById('modal-catatan').value.trim() || 'Tidak ada catatan tambahan';
+
+            let textMessage = "";
+
+            if (currentProductType === 'desain-saja') {
+                const paketRadio = document.querySelector('input[name="paket_desain"]:checked');
+                const paketDesain = paketRadio ? paketRadio.value : 'Desain Besar / Kesulitan Tinggi (Rp100.000)';
+                const jenisDesain = document.getElementById('modal-jenis-desain').value.trim();
+                const komitmenChecked = document.getElementById('modal-desain-komitmen').checked;
+
+                if (!komitmenChecked) {
+                    alert('Silakan centang persetujuan janji pembayaran jasa desain terlebih dahulu.');
+                    return;
+                }
+
+                textMessage = 
+"Halo Kazayn Store,\n" +
+"Saya berminat order jasa desain profesional tanpa cetak.\n\n" +
+"Nama Pemesan: " + nama + "\n" +
+"Alamat Lengkap: " + alamat + "\n" +
+"Kategori Desain: " + paketDesain + "\n" +
+"Rencana Desain: " + jenisDesain + "\n" +
+"Pernyataan Komitmen: Saya pasti Membayar Jasa desainya Jika desain Sudah selesai dibuat.\n" +
+"Detail / Catatan Konsep: " + catatan + "\n\n" +
+"Mohon dapat diproses. Terima kasih.";
+            } else {
+                const opsiRadio = document.querySelector('input[name="opsi_layanan"]:checked');
+                const opsiLayanan = opsiRadio ? opsiRadio.value : 'Cetak Saja';
+
+                let ukuranJumlahText = '';
+
+                if (currentProductType === 'spanduk-flexy' || currentProductType === 'spanduk-kain') {
+                    const p = parseFloat(document.getElementById('calc-panjang').value) || 0;
+                    const l = parseFloat(document.getElementById('calc-lebar').value) || 0;
+                    const qty = parseInt(document.getElementById('calc-jumlah').value) || 1;
+                    const luasTotal = (p * l * qty).toFixed(1);
+                    
+                    let totalHarga = (p * l * qty * currentUnitPrice);
+                    if (opsiLayanan.includes('Promo Jasa Desain')) {
+                        totalHarga += 30000;
+                    }
+
+                    ukuranJumlahText = p + 'x' + l + ' meter (' + qty + ' pcs, Total: ' + luasTotal + ' m², Est. Harga: Rp' + totalHarga.toLocaleString('id-ID') + ')';
+                } else {
+                    ukuranJumlahText = document.getElementById('modal-ukuran-jumlah').value.trim();
+                }
+
+                textMessage = 
+"Halo Kazayn Store,\n" +
+"Saya ingin mengonfirmasi pesanan cetak berikut:\n\n" +
+"Nama Pemesan: " + nama + "\n" +
+"Alamat Lengkap: " + alamat + "\n" +
+"Produk: " + produk + "\n" +
+"Pilihan Layanan: " + opsiLayanan + "\n" +
+"Jumlah / Ukuran: " + ukuranJumlahText + "\n" +
+"Detail / Catatan Pesanan: " + catatan + "\n\n" +
+"Mohon dapat diproses. Terima kasih.";
+            }
+
+            const encodedMsg = encodeURIComponent(textMessage);
+            window.open('https://wa.me/6285179756031?text=' + encodedMsg, '_blank');
+            closeOrderModal();
+        }
     </script>
 </body>
 </html>
