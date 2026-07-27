@@ -981,7 +981,7 @@
             </button>
 
             <div class="border-b border-slate-100 pb-3 mb-4">
-                <h3 class="font-extrabold text-navy text-lg">Formulir Pemesanan Cetak</h3>
+                <h3 id="modal-header-title" class="font-extrabold text-navy text-lg">Formulir Pemesanan Cetak</h3>
                 <p class="text-xs text-slate-500">Lengkapi detail pemesanan di bawah ini untuk konfirmasi via WhatsApp.</p>
             </div>
 
@@ -992,7 +992,7 @@
                     <input type="text" id="modal-nama" required placeholder="Masukkan nama Anda" class="w-full px-3.5 py-2.5 bg-slate-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:bg-white">
                 </div>
 
-                <div>
+                <div id="modal-alamat-container">
                     <label for="modal-alamat" class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1">Alamat Lengkap Pengiriman <span class="text-red-500">*</span></label>
                     <textarea id="modal-alamat" required rows="2" placeholder="Nama jalan, nomor rumah, RT/RW, kecamatan, kota/kabupaten" class="w-full px-3.5 py-2.5 bg-slate-50 border border-gray-300 rounded-xl text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-navy focus:bg-white"></textarea>
                 </div>
@@ -1219,6 +1219,9 @@
             currentProductType = productType || 'general';
             document.getElementById('modal-produk').value = productTitle;
             
+            const headerTitle = document.getElementById('modal-header-title');
+            const alamatContainer = document.getElementById('modal-alamat-container');
+            const alamatInput = document.getElementById('modal-alamat');
             const calcBanner = document.getElementById('modal-calc-banner');
             const generalQty = document.getElementById('modal-general-qty');
             const generalQtyInput = document.getElementById('modal-ukuran-jumlah');
@@ -1228,6 +1231,10 @@
             const jenisDesainInput = document.getElementById('modal-jenis-desain');
 
             if (currentProductType === 'desain-saja') {
+                if (headerTitle) headerTitle.textContent = 'Formulir Pemesanan Jasa Desain';
+                if (alamatContainer) alamatContainer.classList.add('hidden');
+                if (alamatInput) alamatInput.removeAttribute('required');
+
                 calcBanner.classList.add('hidden');
                 generalQty.classList.add('hidden');
                 generalQtyInput.removeAttribute('required');
@@ -1238,6 +1245,10 @@
                 if (jenisDesainInput) jenisDesainInput.setAttribute('required', 'true');
                 updateDesainPrice();
             } else {
+                if (headerTitle) headerTitle.textContent = 'Formulir Pemesanan Cetak';
+                if (alamatContainer) alamatContainer.classList.remove('hidden');
+                if (alamatInput) alamatInput.setAttribute('required', 'true');
+
                 if (desainOnlyContainer) desainOnlyContainer.classList.add('hidden');
                 if (desainKomitmenInput) {
                     desainKomitmenInput.removeAttribute('required');
@@ -1321,7 +1332,8 @@
         function submitOrderToWA(e) {
             e.preventDefault();
             const nama = document.getElementById('modal-nama').value.trim();
-            const alamat = document.getElementById('modal-alamat').value.trim();
+            const alamatInput = document.getElementById('modal-alamat');
+            const alamat = alamatInput ? alamatInput.value.trim() : '';
             const produk = document.getElementById('modal-produk').value.trim();
             const catatan = document.getElementById('modal-catatan').value.trim() || 'Tidak ada catatan tambahan';
 
@@ -1354,7 +1366,6 @@
 "Halo Kazayn Store,\n" +
 "Saya berminat order jasa desain profesional tanpa cetak.\n\n" +
 "Nama Pemesan: " + nama + "\n" +
-"Alamat Lengkap: " + alamat + "\n" +
 "Kategori Desain Dipesan:\n" + selectedList.join("\n") + "\n" +
 "Total Biaya Desain: Rp" + totalHargaDesain.toLocaleString('id-ID') + "\n" +
 "Rencana Desain: " + jenisDesain + "\n" +
