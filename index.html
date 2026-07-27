@@ -278,7 +278,7 @@
                             </div>
                             <div>
                                 <h3 class="font-extrabold text-lg text-slate-900">Jasa Desain Custom</h3>
-                                <p class="text-xs text-amber-800 font-medium">Bisa Revisi Sampai Cocok</p>
+                                <p class="text-xs text-amber-800 font-medium">Gratis Revisi Maksimal 3x</p>
                             </div>
                         </div>
 
@@ -301,7 +301,7 @@
                                             <span>• Desain Produk & Branding</span>
                                             <span class="text-navy bg-amber-200/80 px-2 py-0.5 rounded-md font-extrabold">Rp50.000</span>
                                         </div>
-                                        <p class="text-[11px] text-slate-600 pl-2">Logo, menu makanan, stiker, undangan pernikahan, totebag, botol minuman, dll.</p>
+                                        <p class="text-[11px] text-slate-600 pl-2">Logo, stiker, undangan pernikahan, totebag, botol minuman, dll.</p>
                                     </div>
 
                                     <div class="p-2.5 rounded-xl bg-white/80 border border-amber-200 space-y-1 text-xs">
@@ -309,7 +309,23 @@
                                             <span>• Desain Medsos & Promosi</span>
                                             <span class="text-navy bg-amber-200/80 px-2 py-0.5 rounded-md font-extrabold">Rp35.000</span>
                                         </div>
-                                        <p class="text-[11px] text-slate-600 pl-2">Feed Instagram, Facebook, banner promosi medsos, dll.</p>
+                                        <p class="text-[11px] text-slate-600 pl-2">Menu makanan, feed Instagram, Facebook, banner promosi medsos, dll.</p>
+                                    </div>
+
+                                    <div class="p-2.5 rounded-xl bg-white/80 border border-amber-200 space-y-1 text-xs">
+                                        <div class="flex items-center justify-between font-bold text-amber-950">
+                                            <span>• Adaptasi Posisi / Layout Beda</span>
+                                            <span class="text-navy bg-amber-200/80 px-2 py-0.5 rounded-md font-extrabold">Rp20.000</span>
+                                        </div>
+                                        <p class="text-[11px] text-slate-600 pl-2">Penempatan/posisi berbeda menggunakan desain yang sudah ada.</p>
+                                    </div>
+
+                                    <div class="p-2.5 rounded-xl bg-white/80 border border-amber-200 space-y-1 text-xs">
+                                        <div class="flex items-center justify-between font-bold text-amber-950">
+                                            <span>• Tambahan Biaya Revisi (>3x)</span>
+                                            <span class="text-navy bg-amber-200/80 px-2 py-0.5 rounded-md font-extrabold">Rp15.000 / x</span>
+                                        </div>
+                                        <p class="text-[11px] text-slate-600 pl-2">Gratis revisi maksimal 3x. Biaya berlaku untuk revisi tambahan ke-4 dan seterusnya.</p>
                                     </div>
                                 </div>
                             </li>
@@ -1013,31 +1029,65 @@
                 <div id="modal-desain-only-container" class="hidden space-y-3.5">
                     <div>
                         <label class="block text-[11px] sm:text-xs font-bold text-gray-700 uppercase tracking-wider mb-1.5">
-                            Pilihan Kategori Desain <span class="text-red-500">*</span>
+                            Pilihan Kategori Desain (Bisa Pilih Lebih dari 1) <span class="text-red-500">*</span>
                         </label>
                         <div class="space-y-2">
                             <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-amber-300 bg-amber-50/60 hover:bg-amber-50 cursor-pointer transition">
-                                <input type="radio" name="paket_desain" value="Desain Besar / Kesulitan Tinggi (Rp100.000)" checked class="mt-0.5 w-4 h-4 text-amber-600 focus:ring-amber-500">
-                                <div class="text-xs">
-                                    <span class="font-bold text-amber-950 block">Desain Besar / Kesulitan Tinggi — Rp100.000</span>
-                                    <span class="text-[10px] text-slate-600">Spanduk, banner, spanduk kain, X-banner, roll up, booth, dll.</span>
+                                <input type="checkbox" name="paket_desain_cb" value="Desain Besar / Kesulitan Tinggi" data-price="100000" onchange="updateDesainPrice()" checked class="mt-0.5 w-4 h-4 text-amber-600 rounded focus:ring-amber-500 shrink-0">
+                                <div class="text-xs w-full flex justify-between items-start gap-2">
+                                    <div>
+                                        <span class="font-bold text-amber-950 block">Desain Besar / Kesulitan Tinggi</span>
+                                        <span class="text-[10px] text-slate-600">Spanduk, banner, spanduk kain, X-banner, roll up, booth, dll.</span>
+                                    </div>
+                                    <span class="font-extrabold text-amber-900 bg-amber-200/80 px-2 py-0.5 rounded text-[11px] whitespace-nowrap">Rp100.000</span>
                                 </div>
                             </label>
                             <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-gray-200 bg-slate-50 hover:bg-white cursor-pointer transition">
-                                <input type="radio" name="paket_desain" value="Desain Produk & Branding (Rp50.000)" class="mt-0.5 w-4 h-4 text-amber-600 focus:ring-amber-500">
-                                <div class="text-xs">
-                                    <span class="font-bold text-slate-800 block">Desain Produk & Branding — Rp50.000</span>
-                                    <span class="text-[10px] text-slate-600">Logo, menu makanan, stiker, undangan pernikahan, totebag, botol minuman, dll.</span>
+                                <input type="checkbox" name="paket_desain_cb" value="Desain Produk & Branding" data-price="50000" onchange="updateDesainPrice()" class="mt-0.5 w-4 h-4 text-amber-600 rounded focus:ring-amber-500 shrink-0">
+                                <div class="text-xs w-full flex justify-between items-start gap-2">
+                                    <div>
+                                        <span class="font-bold text-slate-800 block">Desain Produk & Branding</span>
+                                        <span class="text-[10px] text-slate-600">Logo, stiker, undangan pernikahan, totebag, botol minuman, dll.</span>
+                                    </div>
+                                    <span class="font-extrabold text-navy bg-slate-200 px-2 py-0.5 rounded text-[11px] whitespace-nowrap">Rp50.000</span>
                                 </div>
                             </label>
                             <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-gray-200 bg-slate-50 hover:bg-white cursor-pointer transition">
-                                <input type="radio" name="paket_desain" value="Desain Medsos & Promosi (Rp35.000)" class="mt-0.5 w-4 h-4 text-amber-600 focus:ring-amber-500">
-                                <div class="text-xs">
-                                    <span class="font-bold text-slate-800 block">Desain Medsos & Promosi — Rp35.000</span>
-                                    <span class="text-[10px] text-slate-600">Feed Instagram, Facebook, banner promosi medsos, dll.</span>
+                                <input type="checkbox" name="paket_desain_cb" value="Desain Medsos & Promosi" data-price="35000" onchange="updateDesainPrice()" class="mt-0.5 w-4 h-4 text-amber-600 rounded focus:ring-amber-500 shrink-0">
+                                <div class="text-xs w-full flex justify-between items-start gap-2">
+                                    <div>
+                                        <span class="font-bold text-slate-800 block">Desain Medsos & Promosi</span>
+                                        <span class="text-[10px] text-slate-600">Menu makanan, feed Instagram, Facebook, banner promosi medsos, dll.</span>
+                                    </div>
+                                    <span class="font-extrabold text-navy bg-slate-200 px-2 py-0.5 rounded text-[11px] whitespace-nowrap">Rp35.000</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-gray-200 bg-slate-50 hover:bg-white cursor-pointer transition">
+                                <input type="checkbox" name="paket_desain_cb" value="Adaptasi Posisi / Layout Beda (Desain Sama)" data-price="20000" onchange="updateDesainPrice()" class="mt-0.5 w-4 h-4 text-amber-600 rounded focus:ring-amber-500 shrink-0">
+                                <div class="text-xs w-full flex justify-between items-start gap-2">
+                                    <div>
+                                        <span class="font-bold text-slate-800 block">Adaptasi Posisi / Layout Beda</span>
+                                        <span class="text-[10px] text-slate-600">Penempatan/posisi berbeda menggunakan file desain yang sudah ada.</span>
+                                    </div>
+                                    <span class="font-extrabold text-navy bg-slate-200 px-2 py-0.5 rounded text-[11px] whitespace-nowrap">Rp20.000</span>
+                                </div>
+                            </label>
+                            <label class="flex items-start gap-2.5 p-2.5 rounded-xl border border-gray-200 bg-slate-50 hover:bg-white cursor-pointer transition">
+                                <input type="checkbox" name="paket_desain_cb" value="Tambahan Biaya Revisi (>3x)" data-price="15000" onchange="updateDesainPrice()" class="mt-0.5 w-4 h-4 text-amber-600 rounded focus:ring-amber-500 shrink-0">
+                                <div class="text-xs w-full flex justify-between items-start gap-2">
+                                    <div>
+                                        <span class="font-bold text-slate-800 block">Tambahan Biaya Revisi (>3x)</span>
+                                        <span class="text-[10px] text-slate-600">Gratis revisi max 3x. Tambahan revisi ke-4 dst. kena Rp15.000/revisi.</span>
+                                    </div>
+                                    <span class="font-extrabold text-navy bg-slate-200 px-2 py-0.5 rounded text-[11px] whitespace-nowrap">Rp15.000</span>
                                 </div>
                             </label>
                         </div>
+                    </div>
+
+                    <div class="p-3 bg-amber-100/80 border border-amber-300 rounded-xl flex items-center justify-between text-xs">
+                        <span class="font-bold text-amber-950">Total Biaya Jasa Desain:</span>
+                        <strong id="calc-desain-total" class="font-black text-amber-950 text-sm">Rp100.000</strong>
                     </div>
 
                     <div>
@@ -1186,6 +1236,7 @@
                 if (desainOnlyContainer) desainOnlyContainer.classList.remove('hidden');
                 if (desainKomitmenInput) desainKomitmenInput.setAttribute('required', 'true');
                 if (jenisDesainInput) jenisDesainInput.setAttribute('required', 'true');
+                updateDesainPrice();
             } else {
                 if (desainOnlyContainer) desainOnlyContainer.classList.add('hidden');
                 if (desainKomitmenInput) {
@@ -1236,6 +1287,18 @@
             }
         }
 
+        function updateDesainPrice() {
+            const checkboxes = document.querySelectorAll('input[name="paket_desain_cb"]:checked');
+            let total = 0;
+            checkboxes.forEach(cb => {
+                total += parseInt(cb.getAttribute('data-price') || '0', 10);
+            });
+            const totalEl = document.getElementById('calc-desain-total');
+            if (totalEl) {
+                totalEl.textContent = 'Rp' + total.toLocaleString('id-ID');
+            }
+        }
+
         function updateBannerPrice() {
             const p = parseFloat(document.getElementById('calc-panjang').value) || 0;
             const l = parseFloat(document.getElementById('calc-lebar').value) || 0;
@@ -1265,8 +1328,20 @@
             let textMessage = "";
 
             if (currentProductType === 'desain-saja') {
-                const paketRadio = document.querySelector('input[name="paket_desain"]:checked');
-                const paketDesain = paketRadio ? paketRadio.value : 'Desain Besar / Kesulitan Tinggi (Rp100.000)';
+                const checkedCBs = document.querySelectorAll('input[name="paket_desain_cb"]:checked');
+                if (checkedCBs.length === 0) {
+                    alert('Silakan pilih minimal 1 kategori desain terlebih dahulu.');
+                    return;
+                }
+
+                let selectedList = [];
+                let totalHargaDesain = 0;
+                checkedCBs.forEach(cb => {
+                    const price = parseInt(cb.getAttribute('data-price') || '0', 10);
+                    totalHargaDesain += price;
+                    selectedList.push('- ' + cb.value + ' (Rp' + price.toLocaleString('id-ID') + ')');
+                });
+
                 const jenisDesain = document.getElementById('modal-jenis-desain').value.trim();
                 const komitmenChecked = document.getElementById('modal-desain-komitmen').checked;
 
@@ -1280,7 +1355,8 @@
 "Saya berminat order jasa desain profesional tanpa cetak.\n\n" +
 "Nama Pemesan: " + nama + "\n" +
 "Alamat Lengkap: " + alamat + "\n" +
-"Kategori Desain: " + paketDesain + "\n" +
+"Kategori Desain Dipesan:\n" + selectedList.join("\n") + "\n" +
+"Total Biaya Desain: Rp" + totalHargaDesain.toLocaleString('id-ID') + "\n" +
 "Rencana Desain: " + jenisDesain + "\n" +
 "Pernyataan Komitmen: Saya pasti Membayar Jasa desainya Jika desain Sudah selesai dibuat.\n" +
 "Detail / Catatan Konsep: " + catatan + "\n\n" +
